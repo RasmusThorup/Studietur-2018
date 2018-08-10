@@ -10,6 +10,17 @@ public class GPS : MonoBehaviour {
 
     public static Vector2 playerCoordinates;
 
+    public GameObject connectionLostUI;
+    public int maxWaitForInitializing;
+
+    [BoxGroup("GPS Update Interval")]
+    [InfoBox("Default value is 10")]
+    public float desiredAccuracyInMeters;
+
+    [BoxGroup("GPS Update Interval")]
+    [InfoBox("Default value is 10")]
+    public float updateDistanceInMeters;
+
     [BoxGroup("Current Coordinates")]
     public float latitude;
 
@@ -27,6 +38,7 @@ public class GPS : MonoBehaviour {
         Instance = this;
         //StartCoroutine(StartLocationService());
 	}
+
 
     private void Update()
     {
@@ -59,18 +71,19 @@ public class GPS : MonoBehaviour {
 
         }
 
-        Input.location.Start();
-        int maxWait = 20;
+        Input.location.Start(desiredAccuracyInMeters,updateDistanceInMeters);
+        int maxWait = maxWaitForInitializing;
         while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
         {
             yield return new WaitForSeconds(1);
             maxWait--;
+            Debug.Log("Location Service Initializing Timer: " + maxWait);
         }
 
         if (maxWait <=0)
         {
             Debug.Log("Timed Out");
-
+            connectionLostUI.SetActive(true);
             gPSServiceIsRunning = false;
             yield break;
         }
@@ -79,9 +92,15 @@ public class GPS : MonoBehaviour {
         {
             Debug.Log("Unable to determin device location");
 
+            connectionLostUI.SetActive(true);
+
             gPSServiceIsRunning = false;
             yield break;
         }
+
+        if (connectionLostUI.activeSelf)
+            connectionLostUI.SetActive(false);
+        
 
         //latitude = Input.location.lastData.latitude;
         playerCoordinates.x = Input.location.lastData.latitude;
