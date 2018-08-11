@@ -22,7 +22,7 @@ public class PlaceToVisit : ScriptableObject {
     [System.Serializable]
     public struct TimetravelData {
         public string TimetravelText;
-        //public UnityEvent TimetravelAction;
+        public UnityEvent FMODEVENT;
     }
 
 
