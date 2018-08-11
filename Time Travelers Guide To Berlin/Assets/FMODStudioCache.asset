@@ -12,17 +12,54 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114302389473582266}
-  - {fileID: 114082447590811470}
+  - {fileID: 114215425739284582}
+  - {fileID: 114423674515757744}
   EditorEvents:
-  - {fileID: 114747041488123272}
-  - {fileID: 114826571420380166}
-  - {fileID: 114675467571409288}
-  - {fileID: 114837845007443182}
-  MasterBankRef: {fileID: 114082447590811470}
-  StringsBankRef: {fileID: 114302389473582266}
-  stringsBankWriteTime: 636695973130000000
+  - {fileID: 114982352718134436}
+  - {fileID: 114981092970185326}
+  - {fileID: 114863240926090732}
+  - {fileID: 114449411481038792}
+  MasterBankRef: {fileID: 114423674515757744}
+  StringsBankRef: {fileID: 114215425739284582}
+  stringsBankWriteTime: 636695995080000000
   cacheVersion: 2
+--- !u!114 &114008270095128688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Present
+  guid: ee50d2f0246afa438c212cb2b71b9ee4
+  Banks:
+  - {fileID: 114999380606958010}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114039733788097018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114045065529790012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/FelixSherar/Documents/GitHub/Studietur-2018/The Time Travelers Guide
     To Berlin FMOD/Build/Mobile/Master Bank.bank
-  lastModified: 636695973110000000
+  lastModified: 636695974360000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -108,6 +145,49 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1067200
   Exists: 1
+--- !u!114 &114184641966982998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/FelixSherar/Desktop/The Time Travelers Guide To Berlin FMOD/Build/Mobile/Master
+    Bank.strings.bank
+  lastModified: 636695974360000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 878
+  - Name: Mobile
+    Value: 878
+  Exists: 1
+--- !u!114 &114188433612624922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Past
+  guid: b9966035f0250d40ba595bf1bed22970
+  Banks:
+  - {fileID: 114999380606958010}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114207521219479164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +210,45 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114215425739284582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMOD Banks/Mobile/Master Bank.strings.bank
+  lastModified: 636695995080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 878
+  Exists: 1
+--- !u!114 &114263326227445396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/a
+  guid: 51de8989d8463b4f9f2acea6fd8cd354
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114293751865404374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/FelixSherar/Documents/GitHub/Studietur-2018/The Time Travelers Guide
     To Berlin FMOD/Build/Mobile/Master Bank.strings.bank
-  lastModified: 636695973130000000
+  lastModified: 636695974360000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -166,6 +285,47 @@ MonoBehaviour:
   - Name: Mobile
     Value: 878
   Exists: 1
+--- !u!114 &114423674515757744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/FelixSherar/Documents/GitHub/Studietur-2018/Time Travelers Guide To
+    Berlin/FMOD Banks/Mobile/Master Bank.bank
+  lastModified: 636695995080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 16630
+  Exists: 1
+--- !u!114 &114439808415438850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Rema 1000/Rema 1000 Fort\xE6ller"
+  guid: ae1001f5d832684cbfce9bd025859545
+  Banks:
+  - {fileID: 114999380606958010}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114443453309566552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +341,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114449411481038792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Present
+  guid: ee50d2f0246afa438c212cb2b71b9ee4
+  Banks:
+  - {fileID: 114423674515757744}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114474287944852188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +406,36 @@ MonoBehaviour:
   - Name: Mobile
     Value: 16630
   Exists: 1
+--- !u!114 &114602630376104212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114638182322066280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114650262193841090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +502,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114717045234086438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114747041488123272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,10 +536,25 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114795952943745998}
+  - {fileID: 114717045234086438}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114759179145053776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114795952943745998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +680,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114863240926090732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Past
+  guid: b9966035f0250d40ba595bf1bed22970
+  Banks:
+  - {fileID: 114423674515757744}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114869370966085976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,3 +751,107 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114981092970185326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Rema 1000/Rema 1000 Fort\xE6ller"
+  guid: ae1001f5d832684cbfce9bd025859545
+  Banks:
+  - {fileID: 114423674515757744}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114982352718134436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Rema 1000
+  guid: 44bf26bb15bece40817dcd6f45c1c00a
+  Banks:
+  - {fileID: 114423674515757744}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114602630376104212}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &114988251555762110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Rema 1000/Rema 1000
+  guid: 44bf26bb15bece40817dcd6f45c1c00a
+  Banks:
+  - {fileID: 114999380606958010}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114994162394633978}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
+--- !u!114 &114994162394633978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114999380606958010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/FelixSherar/Desktop/The Time Travelers Guide To Berlin FMOD/Build/Mobile/Master
+    Bank.bank
+  lastModified: 636695974360000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1067200
+  - Name: Mobile
+    Value: 16630
+  Exists: 1
