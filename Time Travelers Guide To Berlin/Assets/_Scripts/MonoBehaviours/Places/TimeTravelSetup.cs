@@ -91,7 +91,7 @@ public class TimeTravelSetup : MonoBehaviour
         {
             var newTimetravelYear = GameObject.Instantiate(timetravelYearPrefab);
 
-            newTimetravelYear.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.timetravelData[i].TimetravelText;
+            newTimetravelYear.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.timetravelData[i].timetravelText;
 
             hss.AddChild(newTimetravelYear);
         }

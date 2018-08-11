@@ -15,5 +15,15 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: d45321e545c13724ab2ba5721db45b93, type: 3}
   placeCoordinates: {x: 55.25496, y: 9.485823}
   timetravelData:
-  - TimetravelText: 4910
-  - TimetravelText: NOW
+  - timetravelText: 1945
+    timetravelFMODEventRef: 
+  - timetravelText: 1984
+    timetravelFMODEventRef: 
+  - timetravelText: 1999
+    timetravelFMODEventRef: 
+  - timetravelText: 2005
+    timetravelFMODEventRef: 
+  - timetravelText: 2017
+    timetravelFMODEventRef: 
+  - timetravelText: Now
+    timetravelFMODEventRef: 

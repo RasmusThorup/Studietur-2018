@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using NaughtyAttributes;
 using UnityEngine.Events;
+using FMODUnity;
 
 [CreateAssetMenu]
 public class PlaceToVisit : ScriptableObject {
@@ -21,8 +22,10 @@ public class PlaceToVisit : ScriptableObject {
 
     [System.Serializable]
     public struct TimetravelData {
-        public string TimetravelText;
-        public UnityEvent FMODEVENT;
+        public string timetravelText;
+
+        [EventRef]
+        public string timetravelFMODEventRef;
     }
 
 
