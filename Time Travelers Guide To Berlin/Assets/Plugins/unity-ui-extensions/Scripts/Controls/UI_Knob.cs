@@ -3,7 +3,7 @@
 
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-
+using NaughtyAttributes;
 /// <summary>
 /// KNOB controller
 /// 

@@ -18,9 +18,16 @@ public class FadeInOut : MonoBehaviour {
 	
 
     public void StartFade(){
-        Touch touch = Input.GetTouch(0);
 
-        transform.position = touch.position;
+        if (Application.platform == RuntimePlatform.OSXEditor)
+        {
+            transform.position = Input.mousePosition;
+        } else
+        {
+            Touch touch = Input.GetTouch(0);
+
+            transform.position = touch.position;
+        }
 
         fadeAnimator.SetTrigger("StartFadeUI");
     }

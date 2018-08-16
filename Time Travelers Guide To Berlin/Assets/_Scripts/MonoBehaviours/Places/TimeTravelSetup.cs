@@ -26,41 +26,6 @@ public class TimeTravelSetup : MonoBehaviour
         {
             content.SetActive(true);
         }
-
-        //GameController.isTimeTraveling = false;
-        //Input.location.Stop();
-
-        //content.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.name;
-
-        //content.transform.GetChild(2).GetComponent<Image>().sprite = GameController.timeTravelPlaceSettings.icon;
-
-
-        //Transform timeTravelSlider = content.transform.GetChild(3);
-        //HorizontalScrollSnap hss = timeTravelSlider.GetComponent<HorizontalScrollSnap>();
-
-        //Transform possibleTimeTravelYears = timeTravelSlider.GetChild(0);
-
-        //GameObject[] childOut = new GameObject[0];
-        //hss.RemoveAllChildren(out childOut);
-
-        //if (childOut.Length > 0)
-        //{
-        //    foreach (var child in childOut)
-        //    {
-        //        Destroy(child.gameObject);
-        //    }
-        //}
-
-        //for (int i = 0; i < GameController.timeTravelPlaceSettings.timeTravelYears.Length; i++)
-        //{
-        //    var newTimetravelYear = GameObject.Instantiate(timetravelYearPrefab);
-
-        //    newTimetravelYear.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.timeTravelYears[i];
-
-        //    hss.AddChild(newTimetravelYear);
-        //}
-
-        //hss.GoToScreen(GameController.timeTravelPlaceSettings.timeTravelYears.Length - 1);
     }
 
     public void StartTimetraveling(){
@@ -87,6 +52,7 @@ public class TimeTravelSetup : MonoBehaviour
             }
         }
 
+        /*
         for (int i = 0; i < GameController.timeTravelPlaceSettings.timetravelData.Length; i++)
         {
             var newTimetravelYear = GameObject.Instantiate(timetravelYearPrefab);
@@ -97,6 +63,7 @@ public class TimeTravelSetup : MonoBehaviour
         }
 
         hss.GoToScreen(GameController.timeTravelPlaceSettings.timetravelData.Length - 1);
+        */
 
     }
 

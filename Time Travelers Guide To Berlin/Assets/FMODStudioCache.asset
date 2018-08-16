@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: 114449411481038792}
   MasterBankRef: {fileID: 114338913614535510}
   StringsBankRef: {fileID: 114215425739284582}
-  stringsBankWriteTime: 636696049900000000
+  stringsBankWriteTime: 636700315270000000
   cacheVersion: 2
 --- !u!114 &114008270095128688
 MonoBehaviour:
@@ -222,12 +222,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Banks/Mobile/Master Bank.strings.bank
-  lastModified: 636696049900000000
+  lastModified: 636700315270000000
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 878
   Exists: 1
+--- !u!114 &114222279662400348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114258898929893038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/RasmusThorup/Documents/GitHub/Studietur-2018/Time Travelers Guide To
     Berlin/FMOD Banks/Mobile/Master Bank.bank
-  lastModified: 636696049900000000
+  lastModified: 636700315270000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -890,7 +905,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114603632424893380}
+  - {fileID: 114222279662400348}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
