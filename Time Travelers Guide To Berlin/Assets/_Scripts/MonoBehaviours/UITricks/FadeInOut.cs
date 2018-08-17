@@ -19,7 +19,7 @@ public class FadeInOut : MonoBehaviour {
 
     public void StartFade(){
 
-        if (Application.platform == RuntimePlatform.OSXEditor)
+        if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.WindowsEditor)
         {
             transform.position = Input.mousePosition;
         } else
