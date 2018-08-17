@@ -3774,7 +3774,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -4879,7 +4879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -270}
+  m_AnchoredPosition: {x: -159, y: 282}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &966901152
@@ -6409,10 +6409,10 @@ MonoBehaviour:
   direction: 1
   knobValue: 0
   maxValue: 0
-  loops: 3
+  loops: 2
   clampOutput01: 1
-  snapToPosition: 1
-  snapStepsPerLoop: 21
+  snapToPosition: 0
+  snapStepsPerLoop: 10
   OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -6429,6 +6429,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Extensions.KnobFloatValueEvent, Assembly-CSharp-firstpass,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  useLerpSnap: 1
+  lerpSpeed: 0.1
 --- !u!114 &1511264282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6667,7 +6669,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -8146,7 +8148,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -8274,7 +8276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1757071215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9922,9 +9924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91260b95cb9e04a1a95d3f7b30f83c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnificationMinMax: {x: 5, y: 20}
+  magnificationMinMax: {x: 5, y: 30}
   select: 0.622
-  margin: 0.2
+  margin: 0.12
 --- !u!114 &2102913036
 MonoBehaviour:
   m_ObjectHideFlags: 0

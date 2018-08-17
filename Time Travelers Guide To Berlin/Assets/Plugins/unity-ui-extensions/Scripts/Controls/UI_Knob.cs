@@ -4,6 +4,7 @@
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
+using System.Collections;
 /// <summary>
 /// KNOB controller
 /// 
@@ -30,7 +31,7 @@ namespace UnityEngine.UI.Extensions
         public enum Direction { CW, CCW };
         [Tooltip("Direction of rotation CW - clockwise, CCW - counterClockwise")]
         public Direction direction = Direction.CW;
-        [HideInInspector]
+        [ReadOnly]
         public float knobValue;
         [Tooltip("Max value of the knob, maximum RAW output value knob can reach, overrides snap step, IF set to 0 or higher than loops, max value will be set by loops")]
         public float maxValue = 0;
@@ -52,26 +53,96 @@ namespace UnityEngine.UI.Extensions
         private Quaternion _initRotation;
         private bool _canDrag = false;
 
+        //HAck thing
+        Quaternion startRotation;
+        Coroutine lerpSnapCoroutine;
+
+        public bool useLerpSnap;
+        bool _canUseLerpSnap;
+        public float lerpSpeed;
+
+        private void Start()
+        {
+            startRotation = transform.rotation;
+        }
+
+        private void OnEnable()
+        {
+            transform.rotation = startRotation;
+            knobValue = 0;
+            _currentLoops = 0;
+        }
+
+        IEnumerator StartLerpSnap(float coroutineKnobValue){
+            
+            float snapStep = 1 / (float)snapStepsPerLoop;
+            float newValue = Mathf.Round(coroutineKnobValue / snapStep) * snapStep;
+
+            float knobValueHolder = coroutineKnobValue;
+
+            yield return StartCoroutine(pTween.To(lerpSpeed, 0, 1, t =>
+            {
+                float invokeValue = Mathf.Lerp(knobValueHolder, newValue, t);
+                transform.eulerAngles = new Vector3(0, 0, 360 * invokeValue);
+                InvokeEvents(invokeValue + _currentLoops);
+            }));
+
+            lerpSnapCoroutine = null;
+
+            yield break;
+        }
+
+        IEnumerator LerpValue(){
+
+
+
+            yield break;
+        } 
+
         //ONLY ALLOW ROTATION WITH POINTER OVER THE CONTROL
         public void OnPointerDown(PointerEventData eventData)
         {
             _canDrag = true;
+
+            if (lerpSnapCoroutine != null)
+            {
+                StopCoroutine(lerpSnapCoroutine);
+                lerpSnapCoroutine = null;
+            }
         }
         public void OnPointerUp(PointerEventData eventData)
         {
             _canDrag = false;
+
+            if (useLerpSnap&& _canUseLerpSnap)
+                lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
+            
+            _canUseLerpSnap = false;
         }
         public void OnPointerEnter(PointerEventData eventData)
         {
             _canDrag = true;
+
+            if (lerpSnapCoroutine != null)
+            {
+                StopCoroutine(lerpSnapCoroutine);
+                lerpSnapCoroutine = null;
+            }
+
         }
         public void OnPointerExit(PointerEventData eventData)
         {
             _canDrag = false;
+
+            if (useLerpSnap && _canUseLerpSnap)
+                lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
+
+            _canUseLerpSnap = false;
         }
         public void OnBeginDrag(PointerEventData eventData)
         {
             SetInitPointerData(eventData);
+            _canUseLerpSnap = true;
         }
         void SetInitPointerData(PointerEventData eventData)
         {
