@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40be6e9de6cb242b68bcb6268ef5396f, type: 3}
-  m_Name: Mac D
+  m_Name: Brandenburger Tor
   m_EditorClassIdentifier: 
-  placeName: Mac D
-  icon: {fileID: 21300000, guid: ad716093ca8bdf84189f6a67bfb8e30e, type: 3}
-  placeCoordinates: {x: 55.251274, y: 9.49035}
+  placeName: Brandenburger Tor
+  icon: {fileID: 21300000, guid: 0dcb0dd28c96aac4dbc9ea18d24bc2a8, type: 3}
+  placeCoordinates: {x: 52.51627, y: 13.377957}
   timetravelData:
-  - timetravelText: 1803
+  - timetravelText: 1986
     timetravelFMODEventRef: 
-  - timetravelText: 1984
+  - timetravelText: 2014
     timetravelFMODEventRef: 
   - timetravelText: Now
     timetravelFMODEventRef: 

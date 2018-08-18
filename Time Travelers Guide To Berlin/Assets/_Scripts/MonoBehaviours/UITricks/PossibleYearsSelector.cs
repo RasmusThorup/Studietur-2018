@@ -32,9 +32,12 @@ public class PossibleYearsSelector : MonoBehaviour {
     {
         YearSelector(0);
 
-        for (int i = transform.childCount-1; i >= 0; i--)
-        {
-            UICircle circle = transform.GetChild(i).GetComponent<UICircle>();
+
+        //Make the right circles fill out correct.
+
+        //for (int i = transform.childCount-1; i >= 0; i--)
+        //{
+        //    UICircle circle = transform.GetChild(i).GetComponent<UICircle>();
 
             //int fillDistance = transform.childCount / GameController.timeTravelPlaceSettings.timetravelData.Length;
 
@@ -47,7 +50,7 @@ public class PossibleYearsSelector : MonoBehaviour {
             //}
 
 
-        }
+        //}
 
     }
 
