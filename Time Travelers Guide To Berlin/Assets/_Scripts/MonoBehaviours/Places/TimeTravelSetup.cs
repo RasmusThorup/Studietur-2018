@@ -39,32 +39,25 @@ public class TimeTravelSetup : MonoBehaviour
 
 
         Transform timeTravelSlider = content.transform.GetChild(3);
-        HorizontalScrollSnap hss = timeTravelSlider.GetComponent<HorizontalScrollSnap>();
 
-        GameObject[] childOut = new GameObject[0];
-        hss.RemoveAllChildren(out childOut);
-
-        if (childOut.Length > 0)
-        {
-            foreach (var child in childOut)
-            {
-                Destroy(child.gameObject);
-            }
-        }
-
-        /*
-        for (int i = 0; i < GameController.timeTravelPlaceSettings.timetravelData.Length; i++)
-        {
-            var newTimetravelYear = GameObject.Instantiate(timetravelYearPrefab);
-
-            newTimetravelYear.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.timetravelData[i].timetravelText;
-
-            hss.AddChild(newTimetravelYear);
-        }
-
-        hss.GoToScreen(GameController.timeTravelPlaceSettings.timetravelData.Length - 1);
-        */
-
+        // Old code from before updated UI
+        //HorizontalScrollSnap hss = timeTravelSlider.GetComponent<HorizontalScrollSnap>();
+        //GameObject[] childOut = new GameObject[0];
+        //hss.RemoveAllChildren(out childOut);
+        //if (childOut.Length > 0)
+        //{
+        //    foreach (var child in childOut)
+        //    {
+        //        Destroy(child.gameObject);
+        //    }
+        //}
+        //for (int i = 0; i < GameController.timeTravelPlaceSettings.timetravelData.Length; i++)
+        //{
+        //    var newTimetravelYear = GameObject.Instantiate(timetravelYearPrefab);
+        //    newTimetravelYear.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = GameController.timeTravelPlaceSettings.timetravelData[i].timetravelText;
+        //    hss.AddChild(newTimetravelYear);
+        //}
+        //hss.GoToScreen(GameController.timeTravelPlaceSettings.timetravelData.Length - 1);
     }
 
     public void StopTimetraveling(){

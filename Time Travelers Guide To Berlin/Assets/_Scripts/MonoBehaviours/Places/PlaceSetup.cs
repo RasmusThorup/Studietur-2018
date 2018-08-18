@@ -25,8 +25,6 @@ public class PlaceSetup : MonoBehaviour {
         transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = placeToVisit.name;
         
         transform.GetChild(1).GetComponent<Image>().sprite = placeToVisit.icon;
-
-        transform.GetChild(3).GetComponent<PlaceDirection>().placeCoordinates= placeToVisit.placeCoordinates;
     }
 
     private void Update()
