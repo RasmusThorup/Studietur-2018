@@ -13,5 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeName: Alexanderplatz
   icon: {fileID: 21300000, guid: 89fe7358765b8ce439b1b90ba3113cc6, type: 3}
-  placeCoordinates: {x: 52.521935, y: 13.41305}
-  timetravelData: []
+  placeCoordinates: {x: 52.521957, y: 13.413236}
+  timetravelData:
+  - timetravelText: Year 1
+    dates: 0200000007000000000000000300000001000000090000000900000004000000
+    timetravelFMODEventRef: event:/Rema 1000/Past
+  - timetravelText: Year 2
+    dates: 0100000007000000010000000100000001000000090000000900000007000000
+    timetravelFMODEventRef: "event:/Rema 1000/Rema 1000 Fort\xE6ller"
+  - timetravelText: Year 3
+    dates: 0100000000000000000000000300000002000000000000000100000006000000
+    timetravelFMODEventRef: event:/Rema 1000/Present
