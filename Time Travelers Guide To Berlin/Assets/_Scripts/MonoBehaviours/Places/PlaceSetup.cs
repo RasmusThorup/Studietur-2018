@@ -22,9 +22,9 @@ public class PlaceSetup : MonoBehaviour {
 
     public void UpdatePlaceInfo()
     {
-        transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = placeToVisit.name;
+        transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = placeToVisit.name;
         
-        transform.GetChild(1).GetComponent<Image>().sprite = placeToVisit.icon;
+        transform.GetChild(2).GetComponent<Image>().sprite = placeToVisit.icon;
     }
 
     private void Update()
