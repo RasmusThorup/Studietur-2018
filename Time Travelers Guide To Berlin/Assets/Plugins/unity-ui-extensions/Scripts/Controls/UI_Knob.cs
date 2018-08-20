@@ -5,8 +5,11 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
 using System.Collections;
+<<<<<<< HEAD
 using FMODUnity;
 
+=======
+>>>>>>> parent of ed9fc24... Last UI controls added
 /// <summary>
 /// KNOB controller
 /// 
@@ -63,6 +66,7 @@ namespace UnityEngine.UI.Extensions
         bool _canUseLerpSnap;
         public float lerpSpeed;
 
+<<<<<<< HEAD
 
         public int distancePerClick;
 
@@ -82,6 +86,8 @@ namespace UnityEngine.UI.Extensions
         public UnityEvent KnobBeginDrag;
         public UnityEvent KnobStoppedDrag;
 
+=======
+>>>>>>> parent of ed9fc24... Last UI controls added
         private void Start()
         {
             startRotation = transform.rotation;
@@ -99,12 +105,15 @@ namespace UnityEngine.UI.Extensions
             transform.rotation = startRotation;
             knobValue = 0;
             _currentLoops = 0;
+<<<<<<< HEAD
 
             dragCounter = 0;
 
             InvokeEvents(0);
 
             KnobStoppedDrag.Invoke();
+=======
+>>>>>>> parent of ed9fc24... Last UI controls added
         }
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
@@ -128,6 +137,8 @@ namespace UnityEngine.UI.Extensions
 
         IEnumerator LerpValue(){
 
+
+
             yield break;
         } 
 
@@ -150,9 +161,6 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
             
             _canUseLerpSnap = false;
-
-            KnobStoppedDrag.Invoke();
-
         }
         public void OnPointerEnter(PointerEventData eventData)
         {
@@ -173,15 +181,11 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
 
             _canUseLerpSnap = false;
-
-            KnobStoppedDrag.Invoke();
         }
         public void OnBeginDrag(PointerEventData eventData)
         {
             SetInitPointerData(eventData);
             _canUseLerpSnap = true;
-
-            KnobBeginDrag.Invoke();
         }
         void SetInitPointerData(PointerEventData eventData)
         {
@@ -297,17 +301,10 @@ namespace UnityEngine.UI.Extensions
             if (clampOutput01)
                 value /= loops;
             OnValueChanged.Invoke(value);
-
-            //sendingValue = value;
-
-
         }
-
     }
 
     [System.Serializable]
     public class KnobFloatValueEvent : UnityEvent<float> { }
-
-    //public class UserLiftedEvent : UnityEvent { }
 
 }

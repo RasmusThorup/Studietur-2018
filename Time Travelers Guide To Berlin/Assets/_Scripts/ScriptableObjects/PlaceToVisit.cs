@@ -24,8 +24,6 @@ public class PlaceToVisit : ScriptableObject {
     public struct TimetravelData {
         public string timetravelText;
 
-        public int[] dates;
-
         [EventRef]
         public string timetravelFMODEventRef;
     }
