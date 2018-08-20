@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
 using System.Collections;
+
 /// <summary>
 /// KNOB controller
 /// 
@@ -61,6 +62,12 @@ namespace UnityEngine.UI.Extensions
         bool _canUseLerpSnap;
         public float lerpSpeed;
 
+        [ReadOnly]
+        public float sendingValue;
+
+        public UnityEvent KnobBeginDrag;
+        public UnityEvent KnobStoppedDrag;
+
         private void Start()
         {
             startRotation = transform.rotation;
@@ -71,6 +78,9 @@ namespace UnityEngine.UI.Extensions
             transform.rotation = startRotation;
             knobValue = 0;
             _currentLoops = 0;
+            InvokeEvents(0);
+
+            KnobStoppedDrag.Invoke();
         }
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
@@ -94,8 +104,6 @@ namespace UnityEngine.UI.Extensions
 
         IEnumerator LerpValue(){
 
-
-
             yield break;
         } 
 
@@ -118,6 +126,9 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
             
             _canUseLerpSnap = false;
+
+            KnobStoppedDrag.Invoke();
+
         }
         public void OnPointerEnter(PointerEventData eventData)
         {
@@ -138,11 +149,15 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
 
             _canUseLerpSnap = false;
+
+            KnobStoppedDrag.Invoke();
         }
         public void OnBeginDrag(PointerEventData eventData)
         {
             SetInitPointerData(eventData);
             _canUseLerpSnap = true;
+
+            KnobBeginDrag.Invoke();
         }
         void SetInitPointerData(PointerEventData eventData)
         {
@@ -249,10 +264,17 @@ namespace UnityEngine.UI.Extensions
             if (clampOutput01)
                 value /= loops;
             OnValueChanged.Invoke(value);
+
+            //sendingValue = value;
+
+
         }
+
     }
 
     [System.Serializable]
     public class KnobFloatValueEvent : UnityEvent<float> { }
+
+    //public class UserLiftedEvent : UnityEvent { }
 
 }
