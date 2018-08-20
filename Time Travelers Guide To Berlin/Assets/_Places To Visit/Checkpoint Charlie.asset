@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeName: Checkpoint Charlie
   icon: {fileID: 21300000, guid: 3f5b4ca70ba3ccc4ea71ff8fde414187, type: 3}
-  placeCoordinates: {x: 0, y: 0}
+  placeCoordinates: {x: 52.507435, y: 13.390382}
   timetravelData: []

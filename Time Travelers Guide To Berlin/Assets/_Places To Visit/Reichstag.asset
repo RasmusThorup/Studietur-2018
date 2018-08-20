@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40be6e9de6cb242b68bcb6268ef5396f, type: 3}
-  m_Name: Alexanderplatz
+  m_Name: Reichstag
   m_EditorClassIdentifier: 
-  placeName: Alexanderplatz
-  icon: {fileID: 21300000, guid: 89fe7358765b8ce439b1b90ba3113cc6, type: 3}
-  placeCoordinates: {x: 52.521935, y: 13.41305}
+  placeName: Reichstag
+  icon: {fileID: 21300000, guid: 2366f47948ced5744845f4b22595ad16, type: 3}
+  placeCoordinates: {x: 52.518753, y: 13.375612}
   timetravelData: []
