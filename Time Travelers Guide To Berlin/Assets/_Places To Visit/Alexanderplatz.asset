@@ -17,10 +17,10 @@ MonoBehaviour:
   timetravelData:
   - timetravelText: Year 1
     dates: 0200000007000000000000000300000001000000090000000900000004000000
-    timetravelFMODEventRef: event:/Rema 1000/Past
+    timetravelFMODEventRef: "event:/Alexanderplatz/Fort\xE6ller/1700 Fort\xE6ller"
   - timetravelText: Year 2
     dates: 0100000007000000010000000100000001000000090000000900000007000000
-    timetravelFMODEventRef: "event:/Rema 1000/Rema 1000 Fort\xE6ller"
+    timetravelFMODEventRef: "event:/Alexanderplatz/Fort\xE6ller/1945 Fort\xE6ller"
   - timetravelText: Year 3
     dates: 0100000000000000000000000300000002000000000000000100000006000000
-    timetravelFMODEventRef: event:/Rema 1000/Present
+    timetravelFMODEventRef: "event:/Alexanderplatz/Fort\xE6ller/2018 Fort\xE6ller"

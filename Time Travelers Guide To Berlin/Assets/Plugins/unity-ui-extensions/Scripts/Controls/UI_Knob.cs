@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
 using System.Collections;
-
+using FMODUnity;
 /// <summary>
 /// KNOB controller
 /// 
@@ -68,6 +68,16 @@ namespace UnityEngine.UI.Extensions
         public UnityEvent KnobBeginDrag;
         public UnityEvent KnobStoppedDrag;
 
+
+        //FMOD 
+        int dragCounter;
+        public int distancePerClick;
+        public StudioEventEmitter clockTickEvent;
+
+        public float newKnobValue;
+        public float oldKnobValue;
+        public float knobSpeed;
+
         private void Start()
         {
             startRotation = transform.rotation;
@@ -81,6 +91,17 @@ namespace UnityEngine.UI.Extensions
             InvokeEvents(0);
 
             KnobStoppedDrag.Invoke();
+
+            //FMOD Stuff
+            dragCounter = 0;
+        }
+
+        private void Update()
+        {
+            newKnobValue = knobValue;
+            knobSpeed = Mathf.Abs(oldKnobValue - newKnobValue * 2);
+            oldKnobValue = newKnobValue;
+            clockTickEvent.SetParameter("Speed", knobSpeed);
         }
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
@@ -252,6 +273,17 @@ namespace UnityEngine.UI.Extensions
             InvokeEvents(knobValue + _currentLoops);
 
             _previousValue = knobValue;
+
+
+            //Fmod stuff
+            dragCounter++;
+            if (dragCounter % distancePerClick == 0)
+            {
+                clockTickEvent.Play();
+
+                //knobFadeEvent.SetParameter("Fade", knobValue);
+            }
+
         }
         private void SnapToPosition(ref float knobValue)
         {
