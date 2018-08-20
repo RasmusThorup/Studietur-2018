@@ -49,7 +49,7 @@ public class PlaceSetup : MonoBehaviour {
             unit = " km";
         }
 
-        transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Distance: " + dist.ToString("F2") + unit;
+        transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "Distance: " + dist.ToString("F2") + unit;
     }
 
     public void StartTimeMachineWindow()
