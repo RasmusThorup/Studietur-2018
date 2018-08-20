@@ -5,11 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
 using System.Collections;
-<<<<<<< HEAD
-using FMODUnity;
 
-=======
->>>>>>> parent of ed9fc24... Last UI controls added
 /// <summary>
 /// KNOB controller
 /// 
@@ -58,7 +54,7 @@ namespace UnityEngine.UI.Extensions
         private Quaternion _initRotation;
         private bool _canDrag = false;
 
-        //Hack thing
+        //HAck thing
         Quaternion startRotation;
         Coroutine lerpSnapCoroutine;
 
@@ -66,54 +62,25 @@ namespace UnityEngine.UI.Extensions
         bool _canUseLerpSnap;
         public float lerpSpeed;
 
-<<<<<<< HEAD
-
-        public int distancePerClick;
-
-        int dragCounter;
-
-        public StudioEventEmitter clockTickEvent;
-
-        public float newKnobValue;
-        public float oldKnobValue;
-        public float knobSpeed;
-
-        //----------- Hack thing end
-
         [ReadOnly]
         public float sendingValue;
 
         public UnityEvent KnobBeginDrag;
         public UnityEvent KnobStoppedDrag;
 
-=======
->>>>>>> parent of ed9fc24... Last UI controls added
         private void Start()
         {
             startRotation = transform.rotation;
         }
 
-        private void Update()
-        {
-            newKnobValue = knobValue;
-            knobSpeed = Mathf.Abs(oldKnobValue - newKnobValue * 2);
-            oldKnobValue = newKnobValue;
-            clockTickEvent.SetParameter("Speed", knobSpeed);
-        }
         private void OnEnable()
         {
             transform.rotation = startRotation;
             knobValue = 0;
             _currentLoops = 0;
-<<<<<<< HEAD
-
-            dragCounter = 0;
-
             InvokeEvents(0);
 
             KnobStoppedDrag.Invoke();
-=======
->>>>>>> parent of ed9fc24... Last UI controls added
         }
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
@@ -137,8 +104,6 @@ namespace UnityEngine.UI.Extensions
 
         IEnumerator LerpValue(){
 
-
-
             yield break;
         } 
 
@@ -161,6 +126,9 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
             
             _canUseLerpSnap = false;
+
+            KnobStoppedDrag.Invoke();
+
         }
         public void OnPointerEnter(PointerEventData eventData)
         {
@@ -181,11 +149,15 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = StartCoroutine(StartLerpSnap(knobValue));
 
             _canUseLerpSnap = false;
+
+            KnobStoppedDrag.Invoke();
         }
         public void OnBeginDrag(PointerEventData eventData)
         {
             SetInitPointerData(eventData);
             _canUseLerpSnap = true;
+
+            KnobBeginDrag.Invoke();
         }
         void SetInitPointerData(PointerEventData eventData)
         {
@@ -279,15 +251,6 @@ namespace UnityEngine.UI.Extensions
             transform.rotation = finalRotation;
             InvokeEvents(knobValue + _currentLoops);
 
-            dragCounter++;
-            if (dragCounter%distancePerClick == 0)
-            {
-                clockTickEvent.Play();
-
-                //knobFadeEvent.SetParameter("Fade", knobValue);
-
-            }
-
             _previousValue = knobValue;
         }
         private void SnapToPosition(ref float knobValue)
@@ -301,10 +264,17 @@ namespace UnityEngine.UI.Extensions
             if (clampOutput01)
                 value /= loops;
             OnValueChanged.Invoke(value);
+
+            //sendingValue = value;
+
+
         }
+
     }
 
     [System.Serializable]
     public class KnobFloatValueEvent : UnityEvent<float> { }
+
+    //public class UserLiftedEvent : UnityEvent { }
 
 }
