@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using NaughtyAttributes;
 using System.Collections;
+using FMODUnity;
 /// <summary>
 /// KNOB controller
 /// 
@@ -53,7 +54,7 @@ namespace UnityEngine.UI.Extensions
         private Quaternion _initRotation;
         private bool _canDrag = false;
 
-        //HAck thing
+        //Hack thing
         Quaternion startRotation;
         Coroutine lerpSnapCoroutine;
 
@@ -61,16 +62,36 @@ namespace UnityEngine.UI.Extensions
         bool _canUseLerpSnap;
         public float lerpSpeed;
 
+        public int distancePerClick;
+
+        int dragCounter;
+
+        public StudioEventEmitter clockTickEvent;
+
+        public float newKnobValue;
+        public float oldKnobValue;
+        public float knobSpeed;
+
+        //----------- Hack thing end
+
         private void Start()
         {
             startRotation = transform.rotation;
         }
 
+        private void Update()
+        {
+            newKnobValue = knobValue;
+            knobSpeed = Mathf.Abs(oldKnobValue - newKnobValue * 2);
+            oldKnobValue = newKnobValue;
+            clockTickEvent.SetParameter("Speed", knobSpeed);
+        }
         private void OnEnable()
         {
             transform.rotation = startRotation;
             knobValue = 0;
             _currentLoops = 0;
+            dragCounter = 0;
         }
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
@@ -235,6 +256,15 @@ namespace UnityEngine.UI.Extensions
 
             transform.rotation = finalRotation;
             InvokeEvents(knobValue + _currentLoops);
+
+            dragCounter++;
+            if (dragCounter%distancePerClick == 0)
+            {
+                clockTickEvent.Play();
+
+                //knobFadeEvent.SetParameter("Fade", knobValue);
+
+            }
 
             _previousValue = knobValue;
         }
