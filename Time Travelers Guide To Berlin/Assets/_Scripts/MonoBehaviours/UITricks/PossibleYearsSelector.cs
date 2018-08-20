@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
+using NaughtyAttributes;
 
 //[ExecuteInEditMode]
-public class PossibleYearsSelector : MonoBehaviour {
-    
-
+public class PossibleYearsSelector : MonoBehaviour
+{
     public Vector2 magnificationMinMax;
 
     [Range(0, 1)]
@@ -18,42 +18,46 @@ public class PossibleYearsSelector : MonoBehaviour {
     float lerp;
     float sectionAmount;
 
-    private void Update()
-    {
-        //YearSelector(1-select);
-    }
+    float enabledChildrenCounter;
+
+    public bool[] possibleYearSelections;
 
     private void Start()
     {
         sectionAmount = 1 / (float)transform.childCount;
+        possibleYearSelections = new bool[transform.childCount];
+        TimetravelController.possibleYearSelectionValues = new int[transform.childCount];
     }
 
     private void OnEnable()
     {
         YearSelector(0);
 
-
         //Make the right circles fill out correct.
 
-        //for (int i = transform.childCount-1; i >= 0; i--)
-        //{
-        //    UICircle circle = transform.GetChild(i).GetComponent<UICircle>();
+        int dateIndex = 0;
 
-            //int fillDistance = transform.childCount / GameController.timeTravelPlaceSettings.timetravelData.Length;
+        int fillDistance = Mathf.FloorToInt((transform.childCount-1) / (GameController.timeTravelPlaceSettings.timetravelData.Length-1));
 
-            //if (i%fillDistance == 0)
-            //{
-            //    circle.Fill = true;
-            //}else
-            //{
-            //    circle.Fill = false;
-            //}
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            UICircle circle = transform.GetChild(i).GetComponent<UICircle>();
 
-
-        //}
-
+            if (i % fillDistance == 0 /*|| i == 0 */|| i == transform.childCount - 1)
+            {
+                circle.Fill = true;
+                possibleYearSelections[i] = true;
+                TimetravelController.possibleYearSelectionValues[i] = dateIndex;
+                dateIndex++;
+            }
+            else
+            {
+                circle.Fill = false;
+                possibleYearSelections[i] = false;
+                TimetravelController.possibleYearSelectionValues[i] = -1;
+            }
+        }
     }
-
     public void YearSelector(float selection){
 
         float currentSection;
@@ -84,10 +88,11 @@ public class PossibleYearsSelector : MonoBehaviour {
                 lerp = magnificationMinMax.x;
             }
 
-            transform.GetChild(i - 1).GetComponent<LayoutElement>().minWidth = lerp;
+            transform.GetChild(i-1).GetComponent<LayoutElement>().minWidth = lerp;
         }
 
     }
+
 
 
 }
