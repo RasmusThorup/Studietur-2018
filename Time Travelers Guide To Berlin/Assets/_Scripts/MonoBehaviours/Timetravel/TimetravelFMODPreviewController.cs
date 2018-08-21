@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class TimetravelFMODPreviewController : MonoBehaviour {
-
-    StudioEventEmitter eventEmitter;
-
+    
     public bool printToConsole;
 
-	// Use this for initialization
-	void Start () {
-        eventEmitter = GetComponent<StudioEventEmitter>();
-	}
+    bool previewIsPlaying;
+    EventInstance instance;
 
     public void PlayFMODYearPreview()
     {
-        if (!eventEmitter.IsPlaying())
+        if (!previewIsPlaying)
         {
-            eventEmitter.Event = GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelPreviewFMODEvent;
-            eventEmitter.Play();
+            //Start Preview
+            instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelPreviewFMODEvent);
+            instance.start();
+
+            previewIsPlaying = true;
+
         } else
         {
             if (printToConsole)
@@ -30,18 +31,22 @@ public class TimetravelFMODPreviewController : MonoBehaviour {
     }
 
     public void StopFMODYearPreview(){
-        if (eventEmitter.IsPlaying())
+
+        if (previewIsPlaying)
         {
-            eventEmitter.Stop();
-            eventEmitter.Event = null;
-        } else
+            //Stop preview;
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+
+            previewIsPlaying = false;
+
+        }else
         {
             if (printToConsole)
             {
                 print("Fmod event already arent playing");
             }
         }
-
     }
 
     private void OnDisable()
