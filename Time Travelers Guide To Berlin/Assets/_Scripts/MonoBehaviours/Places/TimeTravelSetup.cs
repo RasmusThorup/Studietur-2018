@@ -38,7 +38,7 @@ public class TimeTravelSetup : MonoBehaviour
         content.transform.GetChild(2).GetComponent<Image>().sprite = GameController.timeTravelPlaceSettings.icon;
 
 
-        Transform timeTravelSlider = content.transform.GetChild(3);
+        //Transform timeTravelSlider = content.transform.GetChild(3);
 
         // Old code from before updated UI
         //HorizontalScrollSnap hss = timeTravelSlider.GetComponent<HorizontalScrollSnap>();

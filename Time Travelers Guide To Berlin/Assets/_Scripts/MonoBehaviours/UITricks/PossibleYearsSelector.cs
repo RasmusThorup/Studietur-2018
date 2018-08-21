@@ -37,6 +37,10 @@ public class PossibleYearsSelector : MonoBehaviour
 
         int dateIndex = 0;
 
+        if (GameController.timeTravelPlaceSettings == null)
+            return;
+        
+
         int fillDistance = Mathf.FloorToInt((transform.childCount-1) / (GameController.timeTravelPlaceSettings.timetravelData.Length-1));
 
         for (int i = 0; i < transform.childCount; i++)
