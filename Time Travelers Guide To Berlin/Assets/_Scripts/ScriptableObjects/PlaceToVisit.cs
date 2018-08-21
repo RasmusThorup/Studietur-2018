@@ -22,13 +22,14 @@ public class PlaceToVisit : ScriptableObject {
 
     [System.Serializable]
     public struct TimetravelData {
-        public string timetravelText;
-
-        public int[] dates;
+        
+        public string timetravelDate;
 
         [EventRef]
-        public string timetravelFMODEventRef;
-    }
+        public string timetravelNarratorFMODEvent;
 
+        [EventRef]
+        public string timetravelPreviewFMODEvent;
+    }
 
 }

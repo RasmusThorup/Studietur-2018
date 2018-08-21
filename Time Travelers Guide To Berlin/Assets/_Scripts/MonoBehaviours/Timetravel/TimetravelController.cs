@@ -20,6 +20,9 @@ public class TimetravelController : MonoBehaviour {
 
     public void CheckTimetravelPossibility()
     {
+        if (possibleYearSelectionValues == null)
+            return;
+        
 
         if (possibleYearSelectionValues[currentYearIndex] != -1)
         {

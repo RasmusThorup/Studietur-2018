@@ -31,7 +31,7 @@ public class PlayButtonController : MonoBehaviour {
 
     public void PlayFMODYearEvent(){
 
-        print("Start to play for year " + GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelFMODEventRef);
+        print("Start to play for year " + GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
 
     }
 }

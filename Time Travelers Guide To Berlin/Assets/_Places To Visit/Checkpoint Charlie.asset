@@ -15,21 +15,14 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 3f5b4ca70ba3ccc4ea71ff8fde414187, type: 3}
   placeCoordinates: {x: 52.507477, y: 13.390397}
   timetravelData:
-  - timetravelText: Year 1
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
-  - timetravelText: Year 2
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
-  - timetravelText: Year 3
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
-  - timetravelText: Year 4
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
-  - timetravelText: Year 5
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
-  - timetravelText: NOW
-    dates: 0000000000000000000000000000000000000000000000000000000000000000
-    timetravelFMODEventRef: 
+  - timetravelDate: 24051940
+    timetravelNarratorFMODEvent: "event:/Checkpoint Charlie/Fort\xE6ller/1940 Fort\xE6ller"
+    timetravelPreviewFMODEvent: "event:/Checkpoint Charlie/Fort\xE6ller/1940 Fort\xE6ller"
+  - timetravelDate: 07041945
+    timetravelNarratorFMODEvent: "event:/Checkpoint Charlie/Fort\xE6ller/1945 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Checkpoint Charlie/Atmos/1945 - Checkpoint
+      Charlie
+  - timetravelDate: 07012018
+    timetravelNarratorFMODEvent: "event:/Checkpoint Charlie/Fort\xE6ller/2018 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Checkpoint Charlie/Atmos/2018 - Checkpoint
+      Charlie

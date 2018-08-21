@@ -14,4 +14,13 @@ MonoBehaviour:
   placeName: Reichstag
   icon: {fileID: 21300000, guid: 2366f47948ced5744845f4b22595ad16, type: 3}
   placeCoordinates: {x: 52.518753, y: 13.375612}
-  timetravelData: []
+  timetravelData:
+  - timetravelDate: 30081884
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1884 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1884 - Reichstag
+  - timetravelDate: 05071945
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1945 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1945 - Reichstag
+  - timetravelDate: 06042018
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/2018 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/2018 - Reichstag

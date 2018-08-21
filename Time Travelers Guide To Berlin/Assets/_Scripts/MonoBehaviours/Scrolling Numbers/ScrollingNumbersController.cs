@@ -12,26 +12,25 @@ public class ScrollingNumbersController : MonoBehaviour {
     public float rangeFloat;
     public float randomSpinSpeed;
     public float randomSpinSpeedMargin;
-    public int[] dateNumbers;
 
     public float spindownSpeed;
-    public AnimationCurve spindownCurve;
 
     public bool keepSpinning;
 
     bool isSpinning;
-    public bool[] queueAnotherSpindown;
+    bool[] queueAnotherSpindown;
 
     float[] numbersSpinSpeed;
     float[] lerpValue;
     int[] spinDirection;
+    int[] dateNumbers = new int[8];
 
     ScrollRect[] _scroll_rects;
     RectTransform[] _scrollRectTransforms;
     Transform[] _listContainerTransforms;
     RectTransform[] _listContainerRectTransforms;
 
-    public int yearselector;
+    Coroutine slowdownSpinCoroutine;
 
 	void Start () {
         _scroll_rects = gameObject.GetComponentsInChildren<ScrollRect>();
@@ -109,14 +108,19 @@ public class ScrollingNumbersController : MonoBehaviour {
 
         StopAllCoroutines();
 
+
         for (int i = 0; i < dateNumbers.Length; i++)
         {
-            dateNumbers[i] = GameController.timeTravelPlaceSettings.timetravelData[yearIndex].dates[i] * 25;
+            dateNumbers[i] = int.Parse(GameController.timeTravelPlaceSettings.timetravelData[yearIndex].timetravelDate[i].ToString());
+
+            dateNumbers[i] *= 25;
         }
+
+
 
         for (int i = 0; i < _listContainerTransforms.Length; i++)
         {
-            StartCoroutine(SetNumbersSlowdown(i));
+            slowdownSpinCoroutine = StartCoroutine(SetNumbersSlowdown(i));
         }
 
         isSpinning = false;
@@ -155,10 +159,19 @@ public class ScrollingNumbersController : MonoBehaviour {
             }));
         }
 
+        slowdownSpinCoroutine = null;
+
         yield break;
     }
 
     IEnumerator TimetravelSpinNumber(int index){
+
+        if (slowdownSpinCoroutine != null)
+        {
+            StopCoroutine(slowdownSpinCoroutine);
+            slowdownSpinCoroutine = null;
+        }
+
         yield return StartCoroutine(pTween.To(numbersSpinSpeed[index], 250, 0, t =>
         {
 
