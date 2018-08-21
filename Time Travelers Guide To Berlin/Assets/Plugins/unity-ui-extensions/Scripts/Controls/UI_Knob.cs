@@ -294,9 +294,10 @@ namespace UnityEngine.UI.Extensions
             if (clampOutput01)
                 value /= loops;
 
-            if (value>0.96f)
+            if (value>/*0.96f*/ 1 - (1 / (snapStepsPerLoop * loops)))
             {
                 value = 0.96f;
+                value = /*0.96f*/1 - (1 / (snapStepsPerLoop * loops));
             }
 
             OnValueChanged.Invoke(value);
