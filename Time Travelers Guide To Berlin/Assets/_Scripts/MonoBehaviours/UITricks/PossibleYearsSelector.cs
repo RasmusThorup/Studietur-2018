@@ -10,9 +10,6 @@ public class PossibleYearsSelector : MonoBehaviour
 {
     public Vector2 magnificationMinMax;
 
-    [Range(0, 1)]
-    public float select;
-
     public float margin;
 
     float lerp;
@@ -20,7 +17,7 @@ public class PossibleYearsSelector : MonoBehaviour
 
     float enabledChildrenCounter;
 
-    public bool[] possibleYearSelections;
+    bool[] possibleYearSelections;
 
     private void Start()
     {
@@ -34,7 +31,6 @@ public class PossibleYearsSelector : MonoBehaviour
         YearSelector(0);
 
         //Make the right circles fill out correct.
-
         int dateIndex = 0;
 
         if (GameController.timeTravelPlaceSettings == null)
@@ -68,6 +64,11 @@ public class PossibleYearsSelector : MonoBehaviour
         float lerpAmount;
 
         float newSelection = 1 - selection;
+
+        if (newSelection < sectionAmount)
+        {
+            newSelection = sectionAmount;
+        }
 
         for (int i = 1; i <= transform.childCount; i++)
         {
