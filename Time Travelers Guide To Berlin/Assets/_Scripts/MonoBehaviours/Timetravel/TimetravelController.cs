@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using NaughtyAttributes;
 
 public class TimetravelController : MonoBehaviour {
 
+
+    public bool showDebug;
+
+    [ShowIf("showDebug")]
+    public int currentYearIndexDebug;
+
     public static int currentYearIndex;
+
     public static int[] possibleYearSelectionValues;
     public static int currentYearScriptableObjectsIndex;
 
@@ -18,11 +26,18 @@ public class TimetravelController : MonoBehaviour {
         currentYearIndex = Mathf.RoundToInt(25 - (value * 25))-1;
     }
 
+    private void LateUpdate()
+    {
+        if (showDebug)
+        {
+            currentYearIndexDebug = currentYearIndex;
+        }
+    }
+
     public void CheckTimetravelPossibility()
     {
         if (possibleYearSelectionValues == null)
             return;
-        
 
         if (possibleYearSelectionValues[currentYearIndex] != -1)
         {
