@@ -46,7 +46,7 @@ MonoBehaviour:
   - {fileID: 114104528344212312}
   MasterBankRef: {fileID: 114731765294415542}
   StringsBankRef: {fileID: 114215425739284582}
-  stringsBankWriteTime: 636704664190000000
+  stringsBankWriteTime: 636704680500000000
   cacheVersion: 2
 --- !u!114 &114003266482410748
 MonoBehaviour:
@@ -99,8 +99,8 @@ MonoBehaviour:
   Path: "event:/Checkpoint Charlie/Fort\xE6ller/1945 Fort\xE6ller"
   guid: 2ac220fefa799843b9475286862410f7
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -200,7 +200,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114498085752340082}
+  - {fileID: 114839168249913748}
   MinDistance: 0
   MaxDistance: 0
   Length: 13902
@@ -248,6 +248,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114096670834126864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114104528344212312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +334,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114149287716831238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
   Min: 0
   Max: 1
   Default: 0
@@ -470,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Banks/Mobile/Master Bank.strings.bank
-  lastModified: 636704664190000000
+  lastModified: 636704680500000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -488,6 +518,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114234483460402648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
   Min: 0
   Max: 1
   Default: 0
@@ -587,8 +632,8 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/1945 Fort\xE6ller"
   guid: 8934e917f733764a976e23b8ecccd33a
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -775,8 +820,8 @@ MonoBehaviour:
   Path: "event:/Brandenburger Tor/Fort\xE6ller/1945 Fort\xE6ller"
   guid: 0c3ea71aa9e510449464d78fdd4278d1
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -888,7 +933,7 @@ MonoBehaviour:
   - Name: 
     Value: 2497920
   Exists: 1
---- !u!114 &114429922781621520
+--- !u!114 &114427056600343168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -899,7 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Speed
+  Name: Fade
   Min: 0
   Max: 1
   Default: 0
@@ -917,8 +962,8 @@ MonoBehaviour:
   Path: "event:/Checkpoint Charlie/Fort\xE6ller/2018 Fort\xE6ller"
   guid: 15c345becd9e2340ac0740cecb041ab8
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -939,8 +984,8 @@ MonoBehaviour:
   Path: "event:/Alexanderplatz/Fort\xE6ller/2018 Fort\xE6ller"
   guid: aeed535c80663f41b1bfae2812fecb1f
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1016,12 +1061,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/FelixSherar/Documents/GitHub/Studietur-2018/Time Travelers Guide To
     Berlin/FMOD Banks/Mobile/Master Bank.bank
-  lastModified: 636704639450000000
+  lastModified: 636704680500000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 23389536
-  Exists: 0
+    Value: 23388160
+  Exists: 1
 --- !u!114 &114449411481038792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1088,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114459023586665734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114464042865649162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,8 +1363,8 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/2018 Fort\xE6ller"
   guid: a8faa6d9669eb74dab073cb9b764bd9e
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1458,8 +1518,8 @@ MonoBehaviour:
   Path: "event:/Brandenburger Tor/Fort\xE6ller/2018 Fort\xE6ller"
   guid: 797d05cd31dac445b39ba7d2056c04ad
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1799,7 +1859,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114429922781621520}
+  - {fileID: 114459023586665734}
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
@@ -1981,6 +2041,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114839168249913748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114839395793111462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,7 +2267,37 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114908807706503528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114916819050188228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114928471395045054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2251,8 +2356,8 @@ MonoBehaviour:
   Path: "event:/Alexanderplatz/Fort\xE6ller/1945 Fort\xE6ller"
   guid: ce4b891677d4be43aa7b132a66dc4dc4
   Banks:
-  - {fileID: 114731765294415542}
-  IsStream: 1
+  - {fileID: 114448592456135330}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
