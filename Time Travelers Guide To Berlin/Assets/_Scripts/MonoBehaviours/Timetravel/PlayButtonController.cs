@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayButtonController : MonoBehaviour {
 
@@ -9,6 +11,8 @@ public class PlayButtonController : MonoBehaviour {
 
     public UnityEvent StartPlay;
     public UnityEvent StopPlay;
+
+    EventInstance instance;
 
     private void OnEnable()
     {
@@ -19,19 +23,22 @@ public class PlayButtonController : MonoBehaviour {
 
         if (!narratorSpeaking)
         {
+            //Start Play
+            instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
+            instance.start();
+
             StartPlay.Invoke();
-            PlayFMODYearEvent();
+
             narratorSpeaking = true;
         } else
         {
+            //Stop Play
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+
             StopPlay.Invoke();
+
             narratorSpeaking = false;
         }
-    }
-
-    public void PlayFMODYearEvent(){
-
-        print("Start to play for year " + GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
-
     }
 }
