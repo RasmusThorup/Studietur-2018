@@ -17,10 +17,10 @@ MonoBehaviour:
   timetravelData:
   - timetravelDate: 20031700
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/1700 Fort\xE6ller"
-    timetravelPreviewFMODEvent: 
+    timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/1700 - Alexanderplatz
   - timetravelDate: 17101945
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/1945 Fort\xE6ller"
-    timetravelPreviewFMODEvent: 
+    timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/1945 - Alexanderplatz
   - timetravelDate: 23092018
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/2018 Fort\xE6ller"
-    timetravelPreviewFMODEvent: 
+    timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/2018 - Alexanderplatz

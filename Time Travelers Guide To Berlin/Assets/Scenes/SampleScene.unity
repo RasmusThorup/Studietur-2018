@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4709,7 +4709,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 5970.39 km'
+  m_text: 'Distance: 2.23 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -4778,7 +4778,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 381808392}
-    characterCount: 20
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -7590,6 +7590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14782215c92648e4a621b746265c539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printToConsole: 0
 --- !u!1 &572433711
 GameObject:
   m_ObjectHideFlags: 0
@@ -10566,7 +10567,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 5971.09 km'
+  m_text: 'Distance: 2.47 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -10635,7 +10636,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 809025308}
-    characterCount: 20
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -14661,7 +14662,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1075592859}
   m_OnClick:
     m_PersistentCalls:
@@ -18023,35 +18024,8 @@ MonoBehaviour:
   rangeFloat: 25
   randomSpinSpeed: 1
   randomSpinSpeedMargin: 0.5
-  dateNumbers: 0200000007000000000000000300000001000000090000000900000004000000
   spindownSpeed: 1
-  spindownCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 10.969355
-      outSlope: 10.969355
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0
-      outWeight: 0.05912162
-    - serializedVersion: 3
-      time: 1
-      value: 1.0022675
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   keepSpinning: 1
-  queueAnotherSpindown: 
-  yearselector: 0
 --- !u!1 &1418586925
 GameObject:
   m_ObjectHideFlags: 0
@@ -22647,7 +22621,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 5971.30 km'
+  m_text: 'Distance: 2.57 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -22716,7 +22690,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 1737230461}
-    characterCount: 20
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -26682,7 +26656,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 5972.38 km'
+  m_text: 'Distance: 0.00 m'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -26751,7 +26725,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 2072679754}
-    characterCount: 20
+    characterCount: 16
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
