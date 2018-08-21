@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4709,7 +4709,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 1.29 km'
+  m_text: 'Distance: 5970.39 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -4778,7 +4778,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 381808392}
-    characterCount: 17
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -4791,7 +4791,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -7501,6 +7501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8d8ad10d7264d9aa27eca54c97387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showDebug: 1
+  currentYearIndexDebug: 0
   scrollingNumbersController: {fileID: 1411637077}
   timeTravelPossible:
     m_PersistentCalls:
@@ -10544,7 +10546,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 0.00 m'
+  m_text: 'Distance: 5971.09 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -10613,7 +10615,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 809025308}
-    characterCount: 16
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -10626,7 +10628,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -14661,7 +14663,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1075592859}
   m_OnClick:
     m_PersistentCalls:
@@ -15542,7 +15544,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1252601565}
   m_OnClick:
     m_PersistentCalls:
@@ -22620,7 +22622,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 318.48 m'
+  m_text: 'Distance: 5971.30 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -22689,7 +22691,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 1737230461}
-    characterCount: 18
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -22702,7 +22704,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -26655,7 +26657,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 2.47 km'
+  m_text: 'Distance: 5972.38 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -26724,7 +26726,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 2072679754}
-    characterCount: 17
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -26737,7 +26739,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}

@@ -32,6 +32,8 @@ public class ScrollingNumbersController : MonoBehaviour {
 
     Coroutine slowdownSpinCoroutine;
 
+    string today;
+
 	void Start () {
         _scroll_rects = gameObject.GetComponentsInChildren<ScrollRect>();
 
@@ -52,11 +54,6 @@ public class ScrollingNumbersController : MonoBehaviour {
         {
             _listContainerTransforms[i] = _scroll_rects[i].content;
         }
-
-        //for (int i = 0; i < dateNumbers.Length; i++)
-        //{
-        //    dateNumbers[i] = dateNumbers[i] * 25;
-        //}
 
         for (int i = 0; i < dateNumbers.Length; i++)
         {
@@ -108,13 +105,33 @@ public class ScrollingNumbersController : MonoBehaviour {
 
         StopAllCoroutines();
 
-
-        for (int i = 0; i < dateNumbers.Length; i++)
+        if (yearIndex == GameController.timeTravelPlaceSettings.timetravelData.Length-1)
         {
-            dateNumbers[i] = int.Parse(GameController.timeTravelPlaceSettings.timetravelData[yearIndex].timetravelDate[i].ToString());
+            for (int i = 0; i < dateNumbers.Length; i++)
+            {
+                if (System.DateTime.Now.Month > 9)
+                {
+                    today = System.DateTime.Now.Day.ToString() + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
+                }else
+                {
+                    today = System.DateTime.Now.Day.ToString() + "0" + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
+                }
 
-            dateNumbers[i] *= 25;
+                dateNumbers[i] = int.Parse(today[i].ToString());
+
+                dateNumbers[i] *= 25;
+            }
+
+        } else
+        {
+            for (int i = 0; i < dateNumbers.Length; i++)
+            {
+                dateNumbers[i] = int.Parse(GameController.timeTravelPlaceSettings.timetravelData[yearIndex].timetravelDate[i].ToString());
+                
+                dateNumbers[i] *= 25;
+            }
         }
+
 
 
 
