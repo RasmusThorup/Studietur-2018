@@ -24,6 +24,11 @@ public class TimetravelController : MonoBehaviour {
 
     public void SetTimetravelYearIndex(float value){
         currentYearIndex = Mathf.RoundToInt(25 - (value * 25))-1;
+
+        if (currentYearIndex == -1)
+        {
+            currentYearIndex = 0;
+        }
     }
 
     private void LateUpdate()

@@ -293,10 +293,15 @@ namespace UnityEngine.UI.Extensions
         {
             if (clampOutput01)
                 value /= loops;
+
+            if (value>0.96f)
+            {
+                value = 0.96f;
+            }
+
             OnValueChanged.Invoke(value);
 
-            //sendingValue = value;
-
+            sendingValue = value;
 
         }
 
