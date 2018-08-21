@@ -67,16 +67,13 @@ namespace UnityEngine.UI.Extensions
 
         public UnityEvent KnobBeginDrag;
         public UnityEvent KnobStoppedDrag;
-
+        public UnityEvent KnobEnter;
+        bool pointerDown;
 
         //FMOD 
         int dragCounter;
         public int distancePerClick;
         public StudioEventEmitter clockTickEvent;
-
-        public float newKnobValue;
-        public float oldKnobValue;
-        public float knobSpeed;
 
         private void Start()
         {
@@ -138,6 +135,8 @@ namespace UnityEngine.UI.Extensions
                 StopCoroutine(lerpSnapCoroutine);
                 lerpSnapCoroutine = null;
             }
+
+            pointerDown = true;
         }
         public void OnPointerUp(PointerEventData eventData)
         {
@@ -150,6 +149,8 @@ namespace UnityEngine.UI.Extensions
 
             KnobStoppedDrag.Invoke();
 
+            pointerDown = false;
+
         }
         public void OnPointerEnter(PointerEventData eventData)
         {
@@ -161,6 +162,11 @@ namespace UnityEngine.UI.Extensions
                 lerpSnapCoroutine = null;
             }
 
+            if (pointerDown)
+            {
+                KnobEnter.Invoke();
+            }
+           
         }
         public void OnPointerExit(PointerEventData eventData)
         {
