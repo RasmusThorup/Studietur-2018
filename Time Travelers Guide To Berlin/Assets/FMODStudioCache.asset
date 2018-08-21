@@ -46,7 +46,7 @@ MonoBehaviour:
   - {fileID: 114104528344212312}
   MasterBankRef: {fileID: 114731765294415542}
   StringsBankRef: {fileID: 114215425739284582}
-  stringsBankWriteTime: 636704680500000000
+  stringsBankWriteTime: 636704664190000000
   cacheVersion: 2
 --- !u!114 &114003266482410748
 MonoBehaviour:
@@ -100,6 +100,7 @@ MonoBehaviour:
   guid: 2ac220fefa799843b9475286862410f7
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -200,7 +201,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114839168249913748}
+  - {fileID: 114180554194034332}
   MinDistance: 0
   MaxDistance: 0
   Length: 13902
@@ -386,6 +387,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114180554194034332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114183216928458430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Banks/Mobile/Master Bank.strings.bank
-  lastModified: 636704680500000000
+  lastModified: 636704664190000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -633,6 +649,7 @@ MonoBehaviour:
   guid: 8934e917f733764a976e23b8ecccd33a
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -821,6 +838,7 @@ MonoBehaviour:
   guid: 0c3ea71aa9e510449464d78fdd4278d1
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -963,6 +981,7 @@ MonoBehaviour:
   guid: 15c345becd9e2340ac0740cecb041ab8
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -985,6 +1004,7 @@ MonoBehaviour:
   guid: aeed535c80663f41b1bfae2812fecb1f
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1364,6 +1384,7 @@ MonoBehaviour:
   guid: a8faa6d9669eb74dab073cb9b764bd9e
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1467,6 +1488,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114631435034692996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114638182322066280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,6 +1555,7 @@ MonoBehaviour:
   guid: 797d05cd31dac445b39ba7d2056c04ad
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1706,11 +1743,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/RasmusThorup/Documents/GitHub/Studietur-2018/Time Travelers Guide To
     Berlin/FMOD Banks/Mobile/Master Bank.bank
-  lastModified: 636704664190000000
+  lastModified: 636704689990000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 23389536
+    Value: 23388160
   Exists: 1
 --- !u!114 &114734978017441330
 MonoBehaviour:
@@ -1859,7 +1896,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114459023586665734}
+  - {fileID: 114631435034692996}
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
@@ -2357,6 +2394,7 @@ MonoBehaviour:
   guid: ce4b891677d4be43aa7b132a66dc4dc4
   Banks:
   - {fileID: 114448592456135330}
+  - {fileID: 114731765294415542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

@@ -71,7 +71,6 @@ public class PossibleYearsSelector : MonoBehaviour
 
         for (int i = 1; i <= transform.childCount; i++)
         {
-            
             currentSection = sectionAmount * i;
 
             if (newSelection <= currentSection && newSelection > currentSection - margin)
