@@ -96,13 +96,13 @@ namespace UnityEngine.UI.Extensions
             dragCounter = 0;
         }
 
-        private void Update()
-        {
-            newKnobValue = knobValue;
-            knobSpeed = Mathf.Abs(oldKnobValue - newKnobValue * 2);
-            oldKnobValue = newKnobValue;
-            clockTickEvent.SetParameter("Speed", knobSpeed);
-        }
+        //private void Update()
+        //{
+        //    newKnobValue = knobValue;
+        //    knobSpeed = Mathf.Abs(oldKnobValue - newKnobValue * 2);
+        //    oldKnobValue = newKnobValue;
+        //    clockTickEvent.SetParameter("Speed", knobSpeed);
+        //}
 
         IEnumerator StartLerpSnap(float coroutineKnobValue){
             
@@ -280,8 +280,6 @@ namespace UnityEngine.UI.Extensions
             if (dragCounter % distancePerClick == 0)
             {
                 clockTickEvent.Play();
-
-                //knobFadeEvent.SetParameter("Fade", knobValue);
             }
 
         }
