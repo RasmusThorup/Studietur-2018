@@ -15,12 +15,12 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 89fe7358765b8ce439b1b90ba3113cc6, type: 3}
   placeCoordinates: {x: 52.521957, y: 13.413236}
   timetravelData:
-  - timetravelDate: 20031700
+  - timetravelDate: 01011700
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/1700 Fort\xE6ller"
     timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/1700 - Alexanderplatz
-  - timetravelDate: 17101945
+  - timetravelDate: 02051945
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/1945 Fort\xE6ller"
     timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/1945 - Alexanderplatz
-  - timetravelDate: 23092018
+  - timetravelDate: xxxx20xx
     timetravelNarratorFMODEvent: "event:/Alexanderplatz/Fort\xE6ller/2018 Fort\xE6ller"
     timetravelPreviewFMODEvent: event:/Alexanderplatz/Atmos/2018 - Alexanderplatz

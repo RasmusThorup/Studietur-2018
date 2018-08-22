@@ -19,11 +19,15 @@ MonoBehaviour:
     timetravelNarratorFMODEvent: "event:/Brandenburger Tor/Fort\xE6ller/1788 Fort\xE6ller"
     timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/1788 - Brandenburger
       Tor
-  - timetravelDate: 04011945
-    timetravelNarratorFMODEvent: "event:/Brandenburger Tor/Fort\xE6ller/1945 Fort\xE6ller"
-    timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/1945 - Brandenburger
+  - timetravelDate: 30011933
+    timetravelNarratorFMODEvent: "event:/Brandenburger Tor/Fort\xE6ller/1933 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/1933 - Brandenburger
       Tor
-  - timetravelDate: 11032018
+  - timetravelDate: 12061987
+    timetravelNarratorFMODEvent: "event:/Brandenburger Tor/Fort\xE6ller/1987 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/1987 - Brandenburger
+      Tor
+  - timetravelDate: xxxx20xx
     timetravelNarratorFMODEvent: "event:/Brandenburger Tor/Fort\xE6ller/2018 Fort\xE6ller"
-    timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/2018 - Brandenburger
+    timetravelPreviewFMODEvent: event:/Brandenburger Tor/Atmos/1987 - Brandenburger
       Tor

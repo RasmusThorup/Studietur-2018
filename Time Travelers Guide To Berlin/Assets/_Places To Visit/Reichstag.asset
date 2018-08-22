@@ -15,12 +15,18 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 2366f47948ced5744845f4b22595ad16, type: 3}
   placeCoordinates: {x: 52.518753, y: 13.375612}
   timetravelData:
-  - timetravelDate: 30081884
+  - timetravelDate: 01011884
     timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1884 Fort\xE6ller"
     timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1884 - Reichstag
-  - timetravelDate: 05071945
-    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1945 Fort\xE6ller"
-    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1945 - Reichstag
-  - timetravelDate: 06042018
+  - timetravelDate: 27021933
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1933 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1933 - Reichstag
+  - timetravelDate: 26061948
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1948 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1948 - Reichstag
+  - timetravelDate: 03101990
+    timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/1990 Fort\xE6ller"
+    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/1990 - Reichstag
+  - timetravelDate: xxxx20xx
     timetravelNarratorFMODEvent: "event:/Reichstag/Fort\xE6ller/2018 Fort\xE6ller"
-    timetravelPreviewFMODEvent: event:/Reichstag/Atmos/2018 - Reichstag
+    timetravelPreviewFMODEvent: "event:/Reichstag/Fort\xE6ller/2018 Fort\xE6ller"
