@@ -1,11 +1,8 @@
-﻿                     
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.UI.Extensions;
 using NaughtyAttributes;
+using UnityEngine.Events;
 
 public class TimeTravelSetup : MonoBehaviour
 {
@@ -13,6 +10,9 @@ public class TimeTravelSetup : MonoBehaviour
     public GameObject timetravelYearPrefab;
 
     public GameObject content;
+
+    public UnityEvent onTimetravelSetup;
+    bool doTheThing = false;
 
     private void OnEnable()
     {
@@ -26,6 +26,13 @@ public class TimeTravelSetup : MonoBehaviour
         {
             content.SetActive(true);
         }
+
+        if (doTheThing)
+        {
+            onTimetravelSetup.Invoke();
+        }
+
+        doTheThing = true;
     }
 
     public void StartTimetraveling(){
