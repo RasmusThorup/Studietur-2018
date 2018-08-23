@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114215425739284582}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   EditorEvents:
   - {fileID: 114355375748839570}
   - {fileID: 114192184586447084}
@@ -55,9 +55,9 @@ MonoBehaviour:
   - {fileID: 114041035044789674}
   - {fileID: 114776384495451766}
   - {fileID: 114487350860522268}
-  MasterBankRef: {fileID: 114454986257037154}
+  MasterBankRef: {fileID: 114964850631351118}
   StringsBankRef: {fileID: 114215425739284582}
-  stringsBankWriteTime: 636706342870000000
+  stringsBankWriteTime: 636706344920000000
   cacheVersion: 2
 --- !u!114 &114003266482410748
 MonoBehaviour:
@@ -110,7 +110,7 @@ MonoBehaviour:
   Path: event:/Reichstag/Atmos/1990 - Reichstag
   guid: 8c4fbaa030e9454eaef6bb63c4d283e9
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   Path: event:/Reichstag/Atmos/1948 - Reichstag
   guid: 6da7297d400b3e4a930d97b99063ae3f
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   Path: event:/Checkpoint Charlie/Atmos/2018 - Checkpoint Charlie
   guid: 85b2513fc2a00846a57942f19b11d2ba
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   Path: event:/Checkpoint Charlie/Atmos/1961 - Checkpoint Charlie
   guid: 2da65cd71d19624f9f9f8b5ae8361d7b
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   Path: "event:/Brandenburger Tor/Fort\xE6ller/1933 Fort\xE6ller"
   guid: 0c3ea71aa9e510449464d78fdd4278d1
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -421,7 +421,7 @@ MonoBehaviour:
   Path: event:/Alexanderplatz/Atmos/1945 - Alexanderplatz
   guid: e814834d5c678d4e90fc175ed205bcec
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
   Path: event:/UI/Noise Loop
   guid: 6dd97dc4b943424bb467351404dd9bb1
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   Path: event:/Reichstag/Atmos/1933 - Reichstag
   guid: 77b5e9174932ec45b22df498ed8dca67
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -658,7 +658,7 @@ MonoBehaviour:
   Path: event:/UI/Elevator Ding
   guid: 0ecb4334a07e0d41bd69d715fb6b0ceb
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Banks/Mobile/Master Bank.strings.bank
-  lastModified: 636706342870000000
+  lastModified: 636706344920000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -850,7 +850,7 @@ MonoBehaviour:
   Path: event:/Brandenburger Tor/Atmos/1933 - Brandenburger Tor
   guid: b9966035f0250d40ba595bf1bed22970
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -975,7 +975,7 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/1884 Fort\xE6ller"
   guid: 14d65a6e2c4f3741b46ffe3554ef367f
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -997,7 +997,7 @@ MonoBehaviour:
   Path: event:/Brandenburger Tor/Atmos/1987 - Brandenburger Tor
   guid: a7494fc77d22ff478917fec5718f763b
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   Path: "event:/Alexanderplatz/Fort\xE6ller/1700 Fort\xE6ller"
   guid: d7b1421e40686d429827675cfc4f36f3
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1248,6 +1248,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Fade
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114391830962720890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
   Min: 0
   Max: 1
   Default: 0
@@ -1360,7 +1375,7 @@ MonoBehaviour:
   guid: 15c345becd9e2340ac0740cecb041ab8
   Banks:
   - {fileID: 114448592456135330}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1383,7 +1398,7 @@ MonoBehaviour:
   guid: aeed535c80663f41b1bfae2812fecb1f
   Banks:
   - {fileID: 114448592456135330}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1501,7 +1516,7 @@ MonoBehaviour:
   Path: "event:/Brandenburger Tor/Fort\xE6ller/1987 Fort\xE6ller"
   guid: 843459315787c94d90797ea86549682e
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1557,7 +1572,7 @@ MonoBehaviour:
   Path: event:/UI/Logo
   guid: 8162dd2cef876f4eb90a82f2d7062592
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1631,7 +1646,7 @@ MonoBehaviour:
   Path: event:/Brandenburger Tor/Atmos/1788 - Brandenburger Tor
   guid: 9081740247c6b74fa0a0f5ab635f2be3
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1668,7 +1683,7 @@ MonoBehaviour:
   Path: event:/UI/Knob Hum
   guid: 2d9894193b3cae4c83870574d8482e03
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1713,7 +1728,7 @@ MonoBehaviour:
   Path: "event:/Checkpoint Charlie/Fort\xE6ller/1962 Fort\xE6ller"
   guid: 2d0fc97dbd61174eaa5d669e9ff1fc44
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1824,7 +1839,7 @@ MonoBehaviour:
   Path: "event:/Checkpoint Charlie/Fort\xE6ller/1961-2 Fort\xE6ller"
   guid: 2ac220fefa799843b9475286862410f7
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1900,7 +1915,7 @@ MonoBehaviour:
   guid: a8faa6d9669eb74dab073cb9b764bd9e
   Banks:
   - {fileID: 114448592456135330}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1958,7 +1973,7 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/1990 Fort\xE6ller"
   guid: 3536bb0c6ec26641aab5201d5e91016a
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2010,7 +2025,7 @@ MonoBehaviour:
   Path: "event:/Brandenburger Tor/Fort\xE6ller/1788 Fort\xE6ller"
   guid: ae1001f5d832684cbfce9bd025859545
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2032,7 +2047,7 @@ MonoBehaviour:
   Path: event:/Reichstag/Atmos/1884 - Reichstag
   guid: 38e8ad9f766a3a44a7203ddc936a69fc
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2137,7 +2152,7 @@ MonoBehaviour:
   guid: 797d05cd31dac445b39ba7d2056c04ad
   Banks:
   - {fileID: 114448592456135330}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2174,7 +2189,7 @@ MonoBehaviour:
   Path: event:/Brandenburger Tor/Atmos/2018 - Brandenburger Tor
   guid: ee50d2f0246afa438c212cb2b71b9ee4
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2285,7 +2300,7 @@ MonoBehaviour:
   Path: event:/Reichstag/Atmos/2018 - Reichstag
   guid: d124e5950edbab4290a74e5cacabfc09
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2307,7 +2322,7 @@ MonoBehaviour:
   Path: "event:/Checkpoint Charlie/Fort\xE6ller/1961 Fort\xE6ller"
   guid: 3c114187183bc14da2f7c237b615aa78
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2495,7 +2510,7 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/1933 Fort\xE6ller"
   guid: 8934e917f733764a976e23b8ecccd33a
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2517,7 +2532,7 @@ MonoBehaviour:
   Path: event:/Checkpoint Charlie/Atmos/1962 - Checkpoint Charlie
   guid: da5d95c2bbb1b941824f144dbf0bbeac
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2584,7 +2599,7 @@ MonoBehaviour:
   Path: "event:/Reichstag/Fort\xE6ller/1948 Fort\xE6ller"
   guid: 928dcf710867c6468267371fb92156e0
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2606,12 +2621,12 @@ MonoBehaviour:
   Path: event:/UI/Clock Ticks
   guid: 4cd5458c00977d47af55a0c9d88b9c8d
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114393759403312850}
+  - {fileID: 114391830962720890}
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
@@ -3174,7 +3189,7 @@ MonoBehaviour:
   Path: event:/Checkpoint Charlie/Atmos/1961-2 - Checkpoint Charlie
   guid: 1ce42822362cd542abfb86764b63c4af
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3212,7 +3227,7 @@ MonoBehaviour:
   guid: ce4b891677d4be43aa7b132a66dc4dc4
   Banks:
   - {fileID: 114448592456135330}
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3234,7 +3249,7 @@ MonoBehaviour:
   Path: event:/Alexanderplatz/Atmos/2018 - Alexanderplatz
   guid: a8b2c2401a77fa4db75aa9e1a12b041b
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3256,7 +3271,7 @@ MonoBehaviour:
   Path: event:/Alexanderplatz/Atmos/1700 - Alexanderplatz
   guid: 4ffa578830a31c4187ccc3d866a378ee
   Banks:
-  - {fileID: 114454986257037154}
+  - {fileID: 114964850631351118}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3264,6 +3279,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114964850631351118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/RasmusThorup/Documents/GitHub/Studietur-2018/Time Travelers Guide To
+    Berlin/FMOD Banks/Mobile/Master Bank.bank
+  lastModified: 636706344920000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 66078016
+  Exists: 1
 --- !u!114 &114965356827964974
 MonoBehaviour:
   m_ObjectHideFlags: 0
