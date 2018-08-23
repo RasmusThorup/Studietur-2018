@@ -65,6 +65,7 @@ namespace UnityEngine.UI.Extensions
         [ReadOnly]
         public float sendingValue;
 
+        public UnityEvent KnoPointerDown;
         public UnityEvent KnobBeginDrag;
         public UnityEvent KnobStoppedDrag;
         public UnityEvent KnobEnter;
@@ -135,6 +136,8 @@ namespace UnityEngine.UI.Extensions
                 StopCoroutine(lerpSnapCoroutine);
                 lerpSnapCoroutine = null;
             }
+
+            KnoPointerDown.Invoke();
 
             pointerDown = true;
         }
