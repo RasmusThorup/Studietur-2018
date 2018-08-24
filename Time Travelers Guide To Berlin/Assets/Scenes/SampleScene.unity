@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3361,12 +3361,12 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 1
+  m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
@@ -9959,7 +9959,7 @@ VideoPlayer:
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
-  m_WaitForFirstFrame: 0
+  m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!1 &801662837
 GameObject:
@@ -11434,9 +11434,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   microphoneSource: {fileID: 1340873914}
-  sampleRateMin: 0
-  sampleRateMax: 0
-  deviceName: 
 --- !u!114 &916353958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15472,7 +15469,8 @@ AudioSource:
   m_GameObject: {fileID: 1340873913}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: bea84ab7560b640a6baeb0d7d5ec6494,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

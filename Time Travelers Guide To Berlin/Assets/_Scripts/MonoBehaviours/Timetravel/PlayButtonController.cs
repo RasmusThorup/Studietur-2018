@@ -16,10 +16,10 @@ public class PlayButtonController : MonoBehaviour {
 
     EventInstance instance;
 
-    public int sampleRateMin = 0;
-    public int sampleRateMax = 0;
+    int sampleRateMin = 0;
+    int sampleRateMax = 0;
 
-    public string deviceName;
+    string deviceName;
 
     private void Start()
     {
@@ -39,12 +39,12 @@ public class PlayButtonController : MonoBehaviour {
             //Start Play
             if (TimetravelController.currentYearScriptableObjectsIndex == GameController.timeTravelPlaceSettings.timetravelData.Length-1)
             {
-                //Debug.Log("Microphone on");
-                //microphoneSource.clip = Microphone.Start(Microphone.devices[0], true, 2, 44100);
-                //microphoneSource.Play();
-
-
                 microphoneSource.clip = Microphone.Start(deviceName, true, 2, sampleRateMax);
+
+                instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
+                instance.start();
+
+                StartPlay.Invoke();
 
                 while (!(Microphone.GetPosition(deviceName) > 1))
                 {
@@ -73,7 +73,14 @@ public class PlayButtonController : MonoBehaviour {
                 microphoneSource.Stop();
                 Microphone.End(deviceName);
 
-            }else{
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                instance.release();
+
+                StopPlay.Invoke();
+
+
+            }
+            else{
 
                 //Stop Play
                 instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
