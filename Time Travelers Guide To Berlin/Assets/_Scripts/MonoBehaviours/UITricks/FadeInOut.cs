@@ -18,6 +18,7 @@ public class FadeInOut : MonoBehaviour
     public VideoPlayer videoPlayer;
 
     public UnityEvent OnFadeOut;
+    
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class FadeInOut : MonoBehaviour
             transform.position = touch.position;
         }
 
-        child.transform.parent = transform;
+        child.transform.SetParent(transform);
 
         fadeAnimator.SetTrigger("StartFadeUI");
 
@@ -55,7 +56,7 @@ public class FadeInOut : MonoBehaviour
     {
         transform.DetachChildren();
         transform.position = fadeOutPos.position;
-        child.transform.parent = transform;
+        child.transform.SetParent(transform);
     }
 
     public void EnableTimemachineUI()
@@ -65,6 +66,7 @@ public class FadeInOut : MonoBehaviour
 
     public void InvokeAction()
     {
+
         action.Invoke();
     }
 

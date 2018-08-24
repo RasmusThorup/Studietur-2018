@@ -12,7 +12,20 @@ public class PlayButtonController : MonoBehaviour {
     public UnityEvent StartPlay;
     public UnityEvent StopPlay;
 
+    public AudioSource microphoneSource;
+
     EventInstance instance;
+
+    public int sampleRateMin = 0;
+    public int sampleRateMax = 0;
+
+    public string deviceName;
+
+    private void Start()
+    {
+        deviceName = Microphone.devices[0];
+        Microphone.GetDeviceCaps(deviceName, out sampleRateMin, out sampleRateMax);
+    }
 
     private void OnEnable()
     {
@@ -24,19 +37,51 @@ public class PlayButtonController : MonoBehaviour {
         if (!narratorSpeaking)
         {
             //Start Play
-            instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
-            instance.start();
+            if (TimetravelController.currentYearScriptableObjectsIndex == GameController.timeTravelPlaceSettings.timetravelData.Length-1)
+            {
+                //Debug.Log("Microphone on");
+                //microphoneSource.clip = Microphone.Start(Microphone.devices[0], true, 2, 44100);
+                //microphoneSource.Play();
 
-            StartPlay.Invoke();
+
+                microphoneSource.clip = Microphone.Start(deviceName, true, 2, sampleRateMax);
+
+                while (!(Microphone.GetPosition(deviceName) > 1))
+                {
+                    // Wait until the recording has started
+                }
+
+                microphoneSource.loop = true;
+                microphoneSource.Play();
+
+            }
+            else{
+
+                instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
+                instance.start();
+                
+                StartPlay.Invoke();
+                
+            }
 
             narratorSpeaking = true;
+
         } else
         {
-            //Stop Play
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            instance.release();
+            if (TimetravelController.currentYearScriptableObjectsIndex == GameController.timeTravelPlaceSettings.timetravelData.Length - 1)
+            {
+                microphoneSource.Stop();
+                Microphone.End(deviceName);
 
-            StopPlay.Invoke();
+            }else{
+
+                //Stop Play
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                instance.release();
+                
+                StopPlay.Invoke();
+                
+            }
 
             narratorSpeaking = false;
         }
