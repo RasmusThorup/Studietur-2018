@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Video;
 
-public class FadeInOut : MonoBehaviour {
+public class FadeInOut : MonoBehaviour
+{
 
     public Transform fadeOutPos;
     public GameObject timemachineUI;
@@ -11,36 +13,57 @@ public class FadeInOut : MonoBehaviour {
 
     Animator fadeAnimator;
 
+   public GameObject child;
+    public VideoPlayer videoPlayer;
 
-	void Start () {
+    void Start()
+    {
         fadeAnimator = GetComponent<Animator>();
-	}
-	
 
-    public void StartFade(){
+    }
+
+
+    public void StartFade()
+    {
+        transform.DetachChildren();
 
         if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.WindowsEditor)
         {
             transform.position = Input.mousePosition;
-        } else
+        }
+        else
         {
             Touch touch = Input.GetTouch(0);
 
             transform.position = touch.position;
         }
 
+        child.transform.parent = transform;
+
         fadeAnimator.SetTrigger("StartFadeUI");
+
+        videoPlayer.Play();
     }
 
-    public void PlaceFadeAtNewPos(){
+    public void PlaceFadeAtNewPos()
+    {
+        transform.DetachChildren();
         transform.position = fadeOutPos.position;
+        child.transform.parent = transform;
     }
 
-    public void EnableTimemachineUI(){
+    public void EnableTimemachineUI()
+    {
         timemachineUI.SetActive(true);
     }
 
-    public void InvokeAction(){
-        action.Invoke();  
+    public void InvokeAction()
+    {
+        action.Invoke();
+    }
+
+    public void DisableChild()
+    {
+        //child.SetActive(false);
     }
 }

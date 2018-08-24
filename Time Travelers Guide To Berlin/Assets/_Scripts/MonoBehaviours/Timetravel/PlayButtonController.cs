@@ -41,4 +41,15 @@ public class PlayButtonController : MonoBehaviour {
             narratorSpeaking = false;
         }
     }
+
+    public void StopNarratorFMODEvent()
+    {
+        if (narratorSpeaking)
+        {
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+
+            narratorSpeaking = false;
+        }
+    }
 }

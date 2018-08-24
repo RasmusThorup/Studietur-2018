@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using NaughtyAttributes;
+using UnityEngine.Events;
 
 public class ScrollingNumbersController : MonoBehaviour {
 
@@ -33,6 +33,9 @@ public class ScrollingNumbersController : MonoBehaviour {
     Coroutine slowdownSpinCoroutine;
 
     string today;
+
+    public UnityEvent numbersSpiningRandom;
+    public UnityEvent numbersStopScrolling;
 
 	void Start () {
         _scroll_rects = gameObject.GetComponentsInChildren<ScrollRect>();
@@ -94,8 +97,9 @@ public class ScrollingNumbersController : MonoBehaviour {
                 StartCoroutine(TimetravelSpinNumber(i));
             }
             isSpinning = true;
-
-        }else
+            numbersSpiningRandom.Invoke();
+        }
+        else
         {
         }
     }
@@ -132,15 +136,14 @@ public class ScrollingNumbersController : MonoBehaviour {
             }
         }
 
-
-
-
         for (int i = 0; i < _listContainerTransforms.Length; i++)
         {
             slowdownSpinCoroutine = StartCoroutine(SetNumbersSlowdown(i));
         }
 
         isSpinning = false;
+
+        numbersStopScrolling.Invoke();
 
     }
 
