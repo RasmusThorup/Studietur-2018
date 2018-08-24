@@ -11,9 +11,19 @@ public class GameController : MonoBehaviour {
 
     public static bool isTimeTraveling;
 
+    //public PlaceToVisit debugPlaceToVisit;
+
     public static PlaceToVisit timeTravelPlaceSettings;
 
     public static bool debugMode;
+
+    //private void Start()
+    //{
+    //    if (debugPlaceToVisit)
+    //    {
+    //        timeTravelPlaceSettings = debugPlaceToVisit;
+    //    }
+    //}
 
     private void Update()
     {
