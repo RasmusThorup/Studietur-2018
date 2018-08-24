@@ -137,8 +137,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285297013
-  m_fontColor: {r: 0.45882353, g: 0.44313726, b: 0.42352942, a: 1}
+    rgba: 4291753727
+  m_fontColor: {r: 1, g: 0.9647059, b: 0.80784315, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +241,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a56610522d59344ca55c98d7892c523, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b15bd64c4e00c574085b77225090966a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285297013
-  m_fontColor: {r: 0.45882353, g: 0.44313726, b: 0.42352942, a: 1}
+    rgba: 4291753727
+  m_fontColor: {r: 1, g: 0.9647059, b: 0.80784315, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -518,14 +518,14 @@ RectTransform:
   m_GameObject: {fileID: 1618414423087142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.02, y: 1.02, z: 1}
+  m_LocalScale: {x: 0.8772, y: 0.8772, z: 0.86}
   m_Children: []
   m_Father: {fileID: 224068015145837618}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.7, y: 0}
+  m_AnchoredPosition: {x: -156.7, y: -0.0000029644}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224321246461293408
