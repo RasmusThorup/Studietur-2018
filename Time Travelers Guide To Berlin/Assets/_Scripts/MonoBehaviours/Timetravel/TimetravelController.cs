@@ -6,6 +6,7 @@ using NaughtyAttributes;
 
 public class TimetravelController : MonoBehaviour {
 
+    public GameObject possibleYearBubbles;
 
     public bool showDebug;
 
@@ -23,7 +24,7 @@ public class TimetravelController : MonoBehaviour {
     public UnityEvent timeTravelNotPossible;
 
     public void SetTimetravelYearIndex(float value){
-        currentYearIndex = Mathf.RoundToInt(25 - (value * 25))-1;
+        currentYearIndex = Mathf.RoundToInt(possibleYearBubbles.transform.childCount - (value * possibleYearBubbles.transform.childCount))-1;
 
         if (currentYearIndex == -1)
         {

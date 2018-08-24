@@ -17,7 +17,7 @@ public class PossibleYearsSelector : MonoBehaviour
 
     float enabledChildrenCounter;
 
-    bool[] possibleYearSelections;
+    public bool[] possibleYearSelections;
 
     private void Start()
     {
@@ -37,7 +37,7 @@ public class PossibleYearsSelector : MonoBehaviour
             return;
         
 
-        int fillDistance = Mathf.FloorToInt((transform.childCount-1) / (GameController.timeTravelPlaceSettings.timetravelData.Length-1));
+        int fillDistance = Mathf.FloorToInt((transform.childCount/*-1*/) / (GameController.timeTravelPlaceSettings.timetravelData.Length-1));
 
         for (int i = 0; i < transform.childCount; i++)
         {

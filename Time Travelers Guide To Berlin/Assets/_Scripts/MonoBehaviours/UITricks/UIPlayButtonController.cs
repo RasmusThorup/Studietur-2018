@@ -7,9 +7,6 @@ public class UIPlayButtonController : MonoBehaviour
 {
     public float playbackSpeed;
 
-    public long frameJumpTo;
-    public long frameJumpFrom;
-
     public VideoPlayer videoPlayer;
 
     public VideoClip normal;
@@ -17,7 +14,7 @@ public class UIPlayButtonController : MonoBehaviour
     public VideoClip loop;
     public VideoClip stop;
 
-    public enum PlayState { Normal, Disabled, Starting,Looping}
+    public enum PlayState { Normal, Disabled, Starting, Looping }
     public PlayState playState;
 
     private void OnEnable()
@@ -29,9 +26,7 @@ public class UIPlayButtonController : MonoBehaviour
 
     public void PlayButtonAnimNormal()
     {
-        Debug.Log("Playbutton Normal");
-
-        if (playState != PlayState.Normal)
+        if (playState != PlayState.Normal && playState != PlayState.Looping)
         {
             ChangeVideo(normal, playbackSpeed);
             playState = PlayState.Normal;
@@ -41,19 +36,15 @@ public class UIPlayButtonController : MonoBehaviour
 
     public void PlayButtonAnimDisable()
     {
-        Debug.Log("Playbutton Disable");
-
         if (playState != PlayState.Disabled)
         {
-            ChangeVideo(disabled,playbackSpeed);
+            ChangeVideo(disabled, playbackSpeed);
             playState = PlayState.Disabled;
         }
     }
 
     public void PlayButtonAnimPressed()
     {
-        Debug.Log("Playbutton Pressed");
-
         if (playState == PlayState.Normal)
         {
             StartCoroutine(StartPlayAnim());

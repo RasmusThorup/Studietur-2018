@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class FadeInOut : MonoBehaviour
@@ -16,6 +17,8 @@ public class FadeInOut : MonoBehaviour
    public GameObject child;
     public VideoPlayer videoPlayer;
 
+    public UnityEvent OnFadeOut;
+
     void Start()
     {
         fadeAnimator = GetComponent<Animator>();
@@ -25,6 +28,8 @@ public class FadeInOut : MonoBehaviour
 
     public void StartFade()
     {
+        OnFadeOut.Invoke();
+
         transform.DetachChildren();
 
         if (Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.WindowsEditor)
@@ -43,6 +48,7 @@ public class FadeInOut : MonoBehaviour
         fadeAnimator.SetTrigger("StartFadeUI");
 
         videoPlayer.Play();
+
     }
 
     public void PlaceFadeAtNewPos()
