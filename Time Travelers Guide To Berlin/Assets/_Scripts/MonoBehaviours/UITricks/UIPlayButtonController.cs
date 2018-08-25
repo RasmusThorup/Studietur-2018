@@ -63,7 +63,7 @@ public class UIPlayButtonController : MonoBehaviour
     {
         if (playState != PlayState.Looping)
         {
-            StopAllCoroutines();
+            //StopAllCoroutines();
             StartCoroutine(StartPlayAnim());
 
             //playStates.Add(PlayState.Looping);
@@ -75,12 +75,12 @@ public class UIPlayButtonController : MonoBehaviour
         } else if (videoPlayer.isPlaying)
         {
             //playStates.Add(PlayState.StopLoop);
-            //playState = PlayState.StopLoop;
 
             StopAllCoroutines();
-            ChangeVideo(stop,1);
+            ChangeVideo(stop,1.4f);
             videoPlayer.isLooping = false;
             videoPlayer.waitForFirstFrame = true;
+            playState = PlayState.Normal;
 
             //playStates.Clear();
 
@@ -93,7 +93,7 @@ public class UIPlayButtonController : MonoBehaviour
     IEnumerator StartPlayAnim(){
 
         videoPlayer.clip = loop;
-        videoPlayer.playbackSpeed = 1;
+        videoPlayer.playbackSpeed = 1.4f;
         videoPlayer.Play();
         playState = PlayState.Looping;
 
@@ -123,7 +123,7 @@ public class UIPlayButtonController : MonoBehaviour
             {
                 case PlayState.Normal:
                     ChangeVideo(normal, playbackSpeed);
-                    yield return new WaitForSeconds(.59f);
+                    yield return new WaitForSeconds(.5f);
                     //yield return new WaitWhile(() => videoPlayer.isPlaying);
 
                     break;
