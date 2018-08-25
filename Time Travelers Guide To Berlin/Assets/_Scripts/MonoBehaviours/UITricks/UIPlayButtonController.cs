@@ -14,13 +14,18 @@ public class UIPlayButtonController : MonoBehaviour
     public VideoClip loop;
     public VideoClip stop;
 
-    public enum PlayState { Normal, Disabled, Starting, Looping }
+    public enum PlayState { Normal, Disabled, StopLoop, Looping }
     public PlayState playState;
+
+    public List<PlayState> playStates = new List<PlayState>();
+
+    Coroutine chageStates;
 
     private void OnEnable()
     {
         ChangeVideo(normal, playbackSpeed);
         playState = PlayState.Normal;
+       
     }
 
 
@@ -28,8 +33,13 @@ public class UIPlayButtonController : MonoBehaviour
     {
         if (playState != PlayState.Normal && playState != PlayState.Looping)
         {
-            ChangeVideo(normal, playbackSpeed);
+            //ChangeVideo(normal, playbackSpeed);
             playState = PlayState.Normal;
+
+            playStates.Add(PlayState.Normal);
+
+            if (playStates.Count == 1)
+                StartCoroutine(ChangePlaystate());
         }
 
     }
@@ -38,23 +48,41 @@ public class UIPlayButtonController : MonoBehaviour
     {
         if (playState != PlayState.Disabled)
         {
-            ChangeVideo(disabled, playbackSpeed);
+            //ChangeVideo(disabled, playbackSpeed);
             playState = PlayState.Disabled;
+
+            playStates.Add(PlayState.Disabled);
+               
+            if (playStates.Count == 1)
+                StartCoroutine(ChangePlaystate());
         }
     }
 
     public void PlayButtonAnimPressed()
     {
-        if (playState == PlayState.Normal)
+        if (playState != PlayState.Looping)
         {
-            StartCoroutine(StartPlayAnim());
-        } else if (videoPlayer.isPlaying)
+            //StartCoroutine(StartPlayAnim());
+
+            playStates.Add(PlayState.Looping);
+            playState = PlayState.Looping;
+
+            if (playStates.Count == 1)
+                StartCoroutine(ChangePlaystate());
+
+        } else if (playState == PlayState.Looping)
         {
-            StopAllCoroutines();
-            ChangeVideo(stop,1);
-            videoPlayer.isLooping = false;
-            playState = PlayState.Normal;
+            //StopAllCoroutines();
+            playStates.Add(PlayState.StopLoop);
+            playState = PlayState.StopLoop;
+            //ChangeVideo(stop,1);
+            //videoPlayer.isLooping = false;
+            //videoPlayer.waitForFirstFrame = true;
+            //playStates.Clear();
+
         }
+
+
 
     }
 
@@ -66,6 +94,7 @@ public class UIPlayButtonController : MonoBehaviour
         playState = PlayState.Looping;
 
         videoPlayer.isLooping = true;
+        videoPlayer.waitForFirstFrame = false;
 
         while (true)
         {
@@ -79,6 +108,69 @@ public class UIPlayButtonController : MonoBehaviour
         videoPlayer.clip = clip;
         videoPlayer.playbackSpeed = speed;
         videoPlayer.Play();
+    }
+
+
+    IEnumerator ChangePlaystate()
+    {
+        if (playStates.Count>0)
+        {
+            switch (playStates[0])
+            {
+                case PlayState.Normal:
+                    ChangeVideo(normal, playbackSpeed);
+                    yield return new WaitForSeconds(.59f);
+                    //yield return new WaitWhile(() => videoPlayer.isPlaying);
+
+                    break;
+                    
+                case PlayState.Disabled:
+                    ChangeVideo(disabled, playbackSpeed);
+                    yield return new WaitForSeconds(.5f);
+                    //yield return new WaitWhile(() => videoPlayer.isPlaying);
+
+                    break;
+                    
+                case PlayState.Looping:
+                    videoPlayer.clip = loop;
+                    videoPlayer.playbackSpeed = 1;
+                    videoPlayer.Play();
+
+                    videoPlayer.isLooping = true;
+                    videoPlayer.waitForFirstFrame = false;
+
+                    while (playState == PlayState.Looping)
+                    {
+                        yield return new WaitUntil(() => videoPlayer.frame == 140 || playState == PlayState.StopLoop);
+
+                        videoPlayer.frame = 51;
+                    }
+
+                    break;
+
+                case PlayState.StopLoop :
+                    ChangeVideo(stop, 1);
+
+                    videoPlayer.isLooping = false;
+                    videoPlayer.waitForFirstFrame = true;
+
+                    playState = PlayState.Normal;
+
+                    yield return new WaitForSeconds(1f);
+
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        playStates.RemoveAt(0);
+
+        if (playStates.Count!=0)
+        {
+            StartCoroutine(ChangePlaystate());
+        }
     }
 
 }

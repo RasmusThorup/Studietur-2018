@@ -37,6 +37,8 @@ public class ScrollingNumbersController : MonoBehaviour {
     public UnityEvent numbersSpiningRandom;
     public UnityEvent numbersStopScrolling;
 
+    int counter;
+
 	void Start () {
         _scroll_rects = gameObject.GetComponentsInChildren<ScrollRect>();
 
@@ -71,6 +73,8 @@ public class ScrollingNumbersController : MonoBehaviour {
 
     private void OnEnable()
     {
+        counter = 0;
+
         //for (int i = 0; i < dateNumbers.Length; i++)
         //{
         //    dateNumbers[i] = GameController.timeTravelPlaceSettings.timetravelData[yearselector].dates[i] * 25;
@@ -98,6 +102,7 @@ public class ScrollingNumbersController : MonoBehaviour {
             }
             isSpinning = true;
             numbersSpiningRandom.Invoke();
+            counter++;
         }
         else
         {
@@ -143,7 +148,8 @@ public class ScrollingNumbersController : MonoBehaviour {
 
         isSpinning = false;
 
-        numbersStopScrolling.Invoke();
+        if (counter != 0)
+            numbersStopScrolling.Invoke();
 
     }
 

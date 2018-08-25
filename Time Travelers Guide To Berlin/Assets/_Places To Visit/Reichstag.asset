@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Reichstag
   m_EditorClassIdentifier: 
   placeName: Reichstag
-  icon: {fileID: 21300000, guid: 2366f47948ced5744845f4b22595ad16, type: 3}
+  icon: {fileID: 21300000, guid: ef2e6e84a66324463a4147483fec548d, type: 3}
   placeCoordinates: {x: 52.518753, y: 13.375612}
   timetravelData:
   - timetravelDate: 01011884
