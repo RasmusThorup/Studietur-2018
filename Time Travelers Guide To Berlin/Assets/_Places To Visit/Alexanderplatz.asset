@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Alexanderplatz
   m_EditorClassIdentifier: 
   placeName: Alexanderplatz
-  icon: {fileID: 21300000, guid: 092ec9ffea22c4a42b1c1070650b2360, type: 3}
+  icon: {fileID: 21300000, guid: 383377134f1794fad8de874d19c21214, type: 3}
   placeCoordinates: {x: 52.521957, y: 13.413236}
   timetravelData:
   - timetravelDate: 01011700

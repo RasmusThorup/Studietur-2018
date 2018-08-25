@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Brandenburger Tor
   m_EditorClassIdentifier: 
   placeName: Brandenburger Tor
-  icon: {fileID: 21300000, guid: b43f6af6323376f498e660116972762d, type: 3}
+  icon: {fileID: 21300000, guid: cac6e6b89cf2d4114b79e5e6812f405f, type: 3}
   placeCoordinates: {x: 52.51627, y: 13.377957}
   timetravelData:
   - timetravelDate: 01011788
