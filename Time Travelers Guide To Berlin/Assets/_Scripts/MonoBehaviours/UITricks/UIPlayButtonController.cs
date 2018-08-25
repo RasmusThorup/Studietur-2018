@@ -34,6 +34,7 @@ public class UIPlayButtonController : MonoBehaviour
         if (playState != PlayState.Normal && playState != PlayState.Looping)
         {
             //ChangeVideo(normal, playbackSpeed);
+
             playState = PlayState.Normal;
 
             playStates.Add(PlayState.Normal);
@@ -62,22 +63,25 @@ public class UIPlayButtonController : MonoBehaviour
     {
         if (playState != PlayState.Looping)
         {
-            //StartCoroutine(StartPlayAnim());
+            StopAllCoroutines();
+            StartCoroutine(StartPlayAnim());
 
-            playStates.Add(PlayState.Looping);
-            playState = PlayState.Looping;
+            //playStates.Add(PlayState.Looping);
+            //playState = PlayState.Looping;
 
-            if (playStates.Count == 1)
-                StartCoroutine(ChangePlaystate());
+            //if (playStates.Count == 1)
+                //StartCoroutine(ChangePlaystate());
 
-        } else if (playState == PlayState.Looping)
+        } else if (videoPlayer.isPlaying)
         {
-            //StopAllCoroutines();
-            playStates.Add(PlayState.StopLoop);
-            playState = PlayState.StopLoop;
-            //ChangeVideo(stop,1);
-            //videoPlayer.isLooping = false;
-            //videoPlayer.waitForFirstFrame = true;
+            //playStates.Add(PlayState.StopLoop);
+            //playState = PlayState.StopLoop;
+
+            StopAllCoroutines();
+            ChangeVideo(stop,1);
+            videoPlayer.isLooping = false;
+            videoPlayer.waitForFirstFrame = true;
+
             //playStates.Clear();
 
         }
@@ -98,7 +102,7 @@ public class UIPlayButtonController : MonoBehaviour
 
         while (true)
         {
-            yield return new WaitUntil(() => videoPlayer.frame == 140);
+            yield return new WaitUntil(() => videoPlayer.frame == 140 || playState != PlayState.Looping);
             
             videoPlayer.frame = 51;
         }
@@ -171,6 +175,17 @@ public class UIPlayButtonController : MonoBehaviour
         {
             StartCoroutine(ChangePlaystate());
         }
+    }
+
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        playStates.Clear();
+        playState = PlayState.Normal;
+        videoPlayer.isLooping = false;
+        videoPlayer.waitForFirstFrame = true;
+
     }
 
 }

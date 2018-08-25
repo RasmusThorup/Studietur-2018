@@ -54,7 +54,7 @@ namespace UnityEngine.UI.Extensions
         private Quaternion _initRotation;
         private bool _canDrag = false;
 
-        //HAck thing
+        //Hack thing
         Quaternion startRotation;
         Coroutine lerpSnapCoroutine;
 
@@ -87,6 +87,8 @@ namespace UnityEngine.UI.Extensions
             knobValue = 0;
             _currentLoops = 0;
             InvokeEvents(0);
+
+            _previousValue = 0;
 
             KnobStoppedDrag.Invoke();
 
