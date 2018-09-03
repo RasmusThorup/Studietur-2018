@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311974, g: 0.3807402, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1759,7 +1759,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 2.47 km'
+  m_text: 'Distance: 5971.09 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 148185602}
-    characterCount: 17
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -11201,7 +11201,7 @@ MonoBehaviour:
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
-    m_HighlightedTrigger: 
+    m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
@@ -13416,7 +13416,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 2.23 km'
+  m_text: 'Distance: 5970.39 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -13485,7 +13485,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 1089821621}
-    characterCount: 17
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -16458,7 +16458,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 0.00 m'
+  m_text: 'Distance: 5972.38 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -16527,7 +16527,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 1383065784}
-    characterCount: 16
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -17041,6 +17041,7 @@ MonoBehaviour:
   randomSpinSpeedMargin: 0.5
   spindownSpeed: 1
   keepSpinning: 1
+  dateNumbers: 0000000000000000000000000000000000000000000000000000000000000000
   numbersSpiningRandom:
     m_PersistentCalls:
       m_Calls:
@@ -18364,7 +18365,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Distance: 2.57 km'
+  m_text: 'Distance: 5971.30 km'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 630b4615df0a6f54da97786d6ecfb1c9, type: 2}
   m_sharedMaterial: {fileID: 21340365305243136, guid: 630b4615df0a6f54da97786d6ecfb1c9,
@@ -18433,7 +18434,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -80.64477, w: 0}
   m_textInfo:
     textComponent: {fileID: 1495395687}
-    characterCount: 17
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 4
@@ -23870,7 +23871,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1995272840}
   m_OnClick:
     m_PersistentCalls:

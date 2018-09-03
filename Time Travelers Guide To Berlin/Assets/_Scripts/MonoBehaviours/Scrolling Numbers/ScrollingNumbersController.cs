@@ -23,7 +23,7 @@ public class ScrollingNumbersController : MonoBehaviour {
     float[] numbersSpinSpeed;
     float[] lerpValue;
     int[] spinDirection;
-    int[] dateNumbers = new int[8];
+    public int[] dateNumbers = new int[8];
 
     ScrollRect[] _scroll_rects;
     RectTransform[] _scrollRectTransforms;
@@ -118,13 +118,26 @@ public class ScrollingNumbersController : MonoBehaviour {
         {
             for (int i = 0; i < dateNumbers.Length; i++)
             {
+                //Tjekker om måneden har en eller to cifre.
+
+                if (System.DateTime.Now.Day > 9)
+                {
+                    today = System.DateTime.Now.Day.ToString();
+                } else
+                {
+                    today = "0" + System.DateTime.Now.Day.ToString();
+                }
+
                 if (System.DateTime.Now.Month > 9)
                 {
-                    today = System.DateTime.Now.Day.ToString() + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
-                }else
-                {
-                    today = System.DateTime.Now.Day.ToString() + "0" + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
+                    today += System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
                 }
+                else
+                {
+                    today += "0" + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString();
+                }
+
+                //print("Length " + today.Length);
 
                 dateNumbers[i] = int.Parse(today[i].ToString());
 
