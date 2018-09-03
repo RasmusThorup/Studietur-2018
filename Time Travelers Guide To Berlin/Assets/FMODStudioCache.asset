@@ -12,54 +12,69 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114215425739284582}
-  - {fileID: 114516230312917696}
+  - {fileID: 114000658692547908}
+  - {fileID: 114816406500419664}
   EditorEvents:
-  - {fileID: 114355375748839570}
-  - {fileID: 114192184586447084}
-  - {fileID: 114263716343595824}
-  - {fileID: 114430380924986228}
-  - {fileID: 114034956728061224}
-  - {fileID: 114628752068287570}
-  - {fileID: 114776605246267610}
-  - {fileID: 114136690475713122}
-  - {fileID: 114653684086584508}
-  - {fileID: 114464042865649162}
-  - {fileID: 114050168941858916}
-  - {fileID: 114260708064155394}
-  - {fileID: 114480389658936770}
-  - {fileID: 114584182401001580}
-  - {fileID: 114608703612694454}
-  - {fileID: 114435502359242096}
-  - {fileID: 114944888987747032}
-  - {fileID: 114689160872411202}
-  - {fileID: 114363033195335126}
-  - {fileID: 114656060178288442}
-  - {fileID: 114963616393181610}
-  - {fileID: 114961866882549430}
-  - {fileID: 114104528344212312}
-  - {fileID: 114089325276312516}
-  - {fileID: 114449424591594156}
-  - {fileID: 114279792057827572}
-  - {fileID: 114249667061259848}
-  - {fileID: 114941571542311702}
-  - {fileID: 114522692005976408}
-  - {fileID: 114496866990274958}
-  - {fileID: 114060176523853508}
-  - {fileID: 114602553556554506}
-  - {fileID: 114694550191544298}
-  - {fileID: 114145555625657490}
-  - {fileID: 114753699353400818}
-  - {fileID: 114011017368099058}
-  - {fileID: 114756862800063346}
-  - {fileID: 114487350860522268}
-  - {fileID: 114906551593840566}
-  - {fileID: 114577281148336936}
-  - {fileID: 114576465082668142}
-  MasterBankRef: {fileID: 114516230312917696}
-  StringsBankRef: {fileID: 114215425739284582}
+  - {fileID: 114720186935811118}
+  - {fileID: 114621092971034976}
+  - {fileID: 114327695926816076}
+  - {fileID: 114954804466001002}
+  - {fileID: 114830983038891954}
+  - {fileID: 114413565407807850}
+  - {fileID: 114007757370761706}
+  - {fileID: 114638676197416800}
+  - {fileID: 114992065319945808}
+  - {fileID: 114337018387175498}
+  - {fileID: 114860894590799022}
+  - {fileID: 114117199434785302}
+  - {fileID: 114885679100324150}
+  - {fileID: 114116617537688074}
+  - {fileID: 114574309600751058}
+  - {fileID: 114808884642035122}
+  - {fileID: 114331666577233054}
+  - {fileID: 114218752557267786}
+  - {fileID: 114927991992398982}
+  - {fileID: 114863339801195998}
+  - {fileID: 114790476436239704}
+  - {fileID: 114813949880156822}
+  - {fileID: 114288477455841936}
+  - {fileID: 114282217853785380}
+  - {fileID: 114356793054159930}
+  - {fileID: 114970519531212208}
+  - {fileID: 114009153308894628}
+  - {fileID: 114908702571100750}
+  - {fileID: 114615223003516800}
+  - {fileID: 114865239604173798}
+  - {fileID: 114778404725281198}
+  - {fileID: 114211451218363652}
+  - {fileID: 114538178142529434}
+  - {fileID: 114479428008800110}
+  - {fileID: 114929674302604556}
+  - {fileID: 114594013372456042}
+  - {fileID: 114299643845768530}
+  - {fileID: 114222587754157002}
+  MasterBankRef: {fileID: 114816406500419664}
+  StringsBankRef: {fileID: 114000658692547908}
   stringsBankWriteTime: 636714890430000000
   cacheVersion: 2
+--- !u!114 &114000658692547908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMOD Banks/Mobile/Master Bank.strings.bank
+  lastModified: 636714890430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 3086
+  Exists: 1
 --- !u!114 &114003266482410748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +90,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114007757370761706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Checkpoint Charlie/Fort\xE6ller/1961-2 Fort\xE6ller"
+  guid: 2ac220fefa799843b9475286862410f7
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 100000
 --- !u!114 &114008270095128688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +134,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114009153308894628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Brandenburger Tor/Atmos/1987 - Brandenburger Tor
+  guid: a7494fc77d22ff478917fec5718f763b
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114011017368099058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +352,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114067940381442676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114068779822569756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +557,51 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114116617537688074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Clock Ticks
+  guid: 4cd5458c00977d47af55a0c9d88b9c8d
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114067940381442676}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
+--- !u!114 &114117199434785302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Reichstag/Atmos/1884 - Reichstag
+  guid: 38e8ad9f766a3a44a7203ddc936a69fc
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114119034265786730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,6 +925,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114211451218363652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Brandenburger Tor/Atmos/1933 - Brandenburger Tor
+  guid: b9966035f0250d40ba595bf1bed22970
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114211544122289094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,6 +984,28 @@ MonoBehaviour:
   - Name: 
     Value: 3086
   Exists: 1
+--- !u!114 &114218752557267786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Reichstag/Atmos/1933 - Reichstag
+  guid: 77b5e9174932ec45b22df498ed8dca67
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114219359610426270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,6 +1036,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114222587754157002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Brandenburger Tor/Atmos/2018 - Brandenburger Tor
+  guid: ee50d2f0246afa438c212cb2b71b9ee4
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
 --- !u!114 &114225946792861618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1308,50 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 200000
+--- !u!114 &114282217853785380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Number Scroller
+  guid: 894ad190c8605046b6b826af735d3bca
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1059
+--- !u!114 &114288477455841936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Reichstag/Fort\xE6ller/1933 Fort\xE6ller"
+  guid: 8934e917f733764a976e23b8ecccd33a
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114293384070726732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1382,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114299643845768530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Alexanderplatz/Atmos/1945 - Alexanderplatz
+  guid: e814834d5c678d4e90fc175ed205bcec
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114302389473582266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,6 +1425,72 @@ MonoBehaviour:
   - Name: Mobile
     Value: 878
   Exists: 1
+--- !u!114 &114327695926816076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Elevator Ding
+  guid: 0ecb4334a07e0d41bd69d715fb6b0ceb
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3443
+--- !u!114 &114331666577233054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Noise Loop
+  guid: 6dd97dc4b943424bb467351404dd9bb1
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14000
+--- !u!114 &114337018387175498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Checkpoint Charlie/Atmos/1961 - Checkpoint Charlie
+  guid: 2da65cd71d19624f9f9f8b5ae8361d7b
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114338280707317268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,6 +1604,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114356793054159930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Reichstag/Atmos/1990 - Reichstag
+  guid: 8c4fbaa030e9454eaef6bb63c4d283e9
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114358980510344466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,6 +1787,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114413565407807850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Checkpoint Charlie/Atmos/1961-2 - Checkpoint Charlie
+  guid: 1ce42822362cd542abfb86764b63c4af
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114414575776211390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,6 +2168,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114479428008800110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Reichstag/Atmos/2018 - Reichstag
+  guid: d124e5950edbab4290a74e5cacabfc09
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
 --- !u!114 &114480389658936770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,6 +2454,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114538178142529434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alexanderplatz/Fort\xE6ller/1945 Fort\xE6ller"
+  guid: ce4b891677d4be43aa7b132a66dc4dc4
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94000
 --- !u!114 &114538804487146830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,6 +2559,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114574309600751058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Alexanderplatz/Atmos/1700 - Alexanderplatz
+  guid: 4ffa578830a31c4187ccc3d866a378ee
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114576465082668142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2257,6 +2684,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114594013372456042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Checkpoint Charlie/Atmos/1962 - Checkpoint Charlie
+  guid: da5d95c2bbb1b941824f144dbf0bbeac
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200000
 --- !u!114 &114602553556554506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2331,6 +2780,50 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 98000
+--- !u!114 &114615223003516800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Reichstag/Fort\xE6ller/2018 Fort\xE6ller"
+  guid: a8faa6d9669eb74dab073cb9b764bd9e
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
+--- !u!114 &114621092971034976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Brandenburger Tor/Fort\xE6ller/1933 Fort\xE6ller"
+  guid: 0c3ea71aa9e510449464d78fdd4278d1
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 96000
 --- !u!114 &114628752068287570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,6 +2910,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114638676197416800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Checkpoint Charlie/Fort\xE6ller/1962 Fort\xE6ller"
+  guid: 2d0fc97dbd61174eaa5d669e9ff1fc44
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 95000
 --- !u!114 &114650262193841090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,6 +3226,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114720186935811118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Transition
+  guid: 0290f22e15676546b268f992654d0f89
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1529
 --- !u!114 &114725025410548666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3022,6 +3559,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &114778404725281198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alexanderplatz/Fort\xE6ller/2018 Fort\xE6ller"
+  guid: aeed535c80663f41b1bfae2812fecb1f
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 26500
 --- !u!114 &114780226974750482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3075,6 +3634,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114790476436239704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Brandenburger Tor/Fort\xE6ller/1987 Fort\xE6ller"
+  guid: 843459315787c94d90797ea86549682e
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114793396350318026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,6 +3705,50 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114808884642035122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Play
+  guid: 51bd5fdb715f194cad875de6bf3f2824
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 295
+--- !u!114 &114813949880156822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Checkpoint Charlie/Atmos/2018 - Checkpoint Charlie
+  guid: 85b2513fc2a00846a57942f19b11d2ba
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
 --- !u!114 &114814181749458994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3154,6 +3779,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114816406500419664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Volumes/Files/GitHub/Studietur-2018/Time Travelers Guide To Berlin/FMOD Banks/Mobile/Master
+    Bank.bank
+  lastModified: 636715929200000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 85809664
+  Exists: 1
 --- !u!114 &114817567204098076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3210,6 +3854,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114830983038891954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Checkpoint Charlie/Fort\xE6ller/2018 Fort\xE6ller"
+  guid: 15c345becd9e2340ac0740cecb041ab8
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
 --- !u!114 &114833603126053544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3446,6 +4112,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114860894590799022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Reichstag/Fort\xE6ller/1990 Fort\xE6ller"
+  guid: 3536bb0c6ec26641aab5201d5e91016a
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114861862198906382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,6 +4170,50 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94514
+--- !u!114 &114863339801195998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Logo
+  guid: 8162dd2cef876f4eb90a82f2d7062592
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114865239604173798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Brandenburger Tor/Fort\xE6ller/1788 Fort\xE6ller"
+  guid: ae1001f5d832684cbfce9bd025859545
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 98000
 --- !u!114 &114869370966085976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,6 +4284,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114885679100324150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Checkpoint Charlie/Fort\xE6ller/1961 Fort\xE6ller"
+  guid: 3c114187183bc14da2f7c237b615aa78
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 70000
 --- !u!114 &114885778357327886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3608,6 +4362,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 295
+--- !u!114 &114908702571100750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Alexanderplatz/Atmos/2018 - Alexanderplatz
+  guid: a8b2c2401a77fa4db75aa9e1a12b041b
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 28000
 --- !u!114 &114908807706503528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,6 +4414,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114927991992398982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Brandenburger Tor/Fort\xE6ller/2018 Fort\xE6ller"
+  guid: 797d05cd31dac445b39ba7d2056c04ad
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27000
 --- !u!114 &114928471395045054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3653,6 +4451,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114929674302604556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alexanderplatz/Fort\xE6ller/1700 Fort\xE6ller"
+  guid: d7b1421e40686d429827675cfc4f36f3
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 60000
 --- !u!114 &114935150975007206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3747,6 +4567,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 94000
+--- !u!114 &114954804466001002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Reichstag/Fort\xE6ller/1884 Fort\xE6ller"
+  guid: 14d65a6e2c4f3741b46ffe3554ef367f
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114961866882549430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3829,6 +4671,28 @@ MonoBehaviour:
   - Name: 
     Value: 66077760
   Exists: 1
+--- !u!114 &114970519531212208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Brandenburger Tor/Atmos/1788 - Brandenburger Tor
+  guid: 9081740247c6b74fa0a0f5ab635f2be3
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94514
 --- !u!114 &114978754153075848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,6 +4819,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114992065319945808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Knob Hum
+  guid: 2d9894193b3cae4c83870574d8482e03
+  Banks:
+  - {fileID: 114816406500419664}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6585
 --- !u!114 &114994162394633978
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,11 +21,11 @@ public class PlayButtonController : MonoBehaviour {
 
     string deviceName;
 
-    private void Start()
-    {
-        deviceName = Microphone.devices[0];
-        Microphone.GetDeviceCaps(deviceName, out sampleRateMin, out sampleRateMax);
-    }
+    //private void Start()
+    //{
+    //    deviceName = Microphone.devices[0];
+    //    Microphone.GetDeviceCaps(deviceName, out sampleRateMin, out sampleRateMax);
+    //}
 
     private void OnEnable()
     {
@@ -39,7 +39,7 @@ public class PlayButtonController : MonoBehaviour {
             //Start Play
             if (TimetravelController.currentYearScriptableObjectsIndex == GameController.timeTravelPlaceSettings.timetravelData.Length-1)
             {
-                microphoneSource.clip = Microphone.Start(deviceName, true, 2, sampleRateMax);
+               /* microphoneSource.clip = Microphone.Start(deviceName, true, 2, sampleRateMax);
 
                 instance = RuntimeManager.CreateInstance(GameController.timeTravelPlaceSettings.timetravelData[TimetravelController.currentYearScriptableObjectsIndex].timetravelNarratorFMODEvent);
                 instance.start();
@@ -53,7 +53,7 @@ public class PlayButtonController : MonoBehaviour {
 
                 microphoneSource.loop = true;
                 microphoneSource.Play();
-
+                */
             }
             else{
 
@@ -70,6 +70,7 @@ public class PlayButtonController : MonoBehaviour {
         {
             if (TimetravelController.currentYearScriptableObjectsIndex == GameController.timeTravelPlaceSettings.timetravelData.Length - 1)
             {
+                /*
                 microphoneSource.Stop();
                 Microphone.End(deviceName);
 
@@ -77,7 +78,7 @@ public class PlayButtonController : MonoBehaviour {
                 instance.release();
 
                 StopPlay.Invoke();
-
+                */
 
             }
             else{

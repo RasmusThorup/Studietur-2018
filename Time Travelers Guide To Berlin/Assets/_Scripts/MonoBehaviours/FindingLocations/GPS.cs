@@ -34,6 +34,7 @@ public class GPS : MonoBehaviour {
     bool gPSServiceIsRunning;
 
 
+
 	void Start () {
         Instance = this;
         //StartCoroutine(StartLocationService());

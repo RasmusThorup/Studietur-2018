@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour {
     //    }
     //}
 
+    /*
     private void Update()
     {
         minDistance = setMinDistanceInKm;
@@ -37,7 +38,7 @@ public class GameController : MonoBehaviour {
             
         }
     }
-
+    */
     public void DebugModeToggle(bool debugOn){
 
         debugMode = debugOn;

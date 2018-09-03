@@ -18,6 +18,9 @@ public class PlaceSetup : MonoBehaviour {
     {
         timeMachineButton = GetComponentInChildren<Button>();
         fadeInOut = FindObjectOfType<FadeInOut>();
+
+
+        timeMachineButton.interactable = true;
     }
 
     public void UpdatePlaceInfo()
@@ -27,8 +30,10 @@ public class PlaceSetup : MonoBehaviour {
         transform.GetChild(2).GetComponent<Image>().sprite = placeToVisit.icon;
     }
 
+    /*
     private void Update()
     {
+
         double dist = PlaceDistanceCalculator.HaversineDistance(placeToVisit.placeCoordinates);
 
         if (dist<GameController.minDistance)
@@ -50,7 +55,9 @@ public class PlaceSetup : MonoBehaviour {
         }
 
         transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "Distance: " + dist.ToString("F2") + unit;
+
     }
+    */
 
     public void StartTimeMachineWindow()
     {
