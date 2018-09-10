@@ -17,8 +17,8 @@ MonoBehaviour:
     FMOD/The Time Travelers Guide To Berlin.fspro
   SourceProjectPathUnformatted: /Users/FelixSherar/Desktop/The Time Travelers Guide
     To Berlin FMOD/The Time Travelers Guide To Berlin.fspro
-  SourceBankPathUnformatted: FMOD Banks/Mobile
-  AutomaticEventLoading: 1
+  SourceBankPathUnformatted: Assets/StreamingAssets
+  AutomaticEventLoading: 0
   AutomaticSampleLoading: 0
   ImportType: 0
   TargetAssetPath: 
@@ -26,13 +26,11 @@ MonoBehaviour:
   - Platform: 2
     Value: 3
   SampleRateSettings:
-  - Platform: 1
-    Value: 44100
   - Platform: 2
     Value: 0
   LiveUpdateSettings:
   - Platform: 1
-    Value: 1
+    Value: 0
   - Platform: 2
     Value: 0
   OverlaySettings:
@@ -47,9 +45,7 @@ MonoBehaviour:
     Value: 0
   BankDirectorySettings:
   - Platform: 2
-    Value: Mobile
-  - Platform: 1
-    Value: Mobile
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
